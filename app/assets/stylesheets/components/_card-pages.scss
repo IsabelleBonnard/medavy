@@ -1,0 +1,32 @@
+
+div {
+  display: block;
+}
+
+.card-pages {
+  position: relative;
+  background-color: white;
+  margin: 5px;
+  padding: 25px 27px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+ .card-pages h4 {
+  font-size: 30px;
+  color: $dark-gray;
+ }
+
+ .card-pages p {
+  font-size: 14px;
+  color: $light-gray;
+ }
+
+.card-pages i{
+  color: $yellow;
+  font-size: 60px;
+}
+
+.image-pages {
+  width: 100%;
+}

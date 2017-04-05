@@ -1,6 +1,6 @@
 // Your footer style
 #footer {
-  background: $green;
+  background: $black;
   padding: 30px 0;
   color: white;
   width: 100%;
@@ -9,7 +9,7 @@
 
 .wrapper {
   min-height: calc(100vh - 100px);
-  background-color: #E8EFF4;
+  background-color: $yellow;
   /* Equal to height of footer */
   /* But also accounting for potential margin-bottom of last child */
 }

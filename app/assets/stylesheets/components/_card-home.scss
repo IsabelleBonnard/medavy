@@ -10,19 +10,25 @@ div {
   margin: 5px;
   padding: 25px 27px;
   margin-bottom: 30px;
+  opacity: 0.9;
 }
 
  .card-home h4 {
-  font-size: 20px;
-  color: $red;
+  font-size: 30px;
+  color: $dark-gray;
 
  }
 
  .card-home p {
-  font-size: 17px;
+  font-size: 14px;
+  color: $light-gray;
  }
 
 .card-home i{
-  color: $blue;
-  font-size: 30px;
+  color: $yellow;
+  font-size: 60px;
+}
+
+.card-home:hover {
+  opacity: 1;
 }

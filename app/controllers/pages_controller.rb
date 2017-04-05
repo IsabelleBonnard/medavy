@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :contact, :about, :send_contact_message]
+  skip_before_action :authenticate_user!, only: [:home, :contact, :about, :history, :gallery, :send_contact_message]
 
   def home
   end
@@ -8,6 +8,9 @@ class PagesController < ApplicationController
   end
 
   def history
+  end
+
+  def gallery
   end
 
   def send_contact_message

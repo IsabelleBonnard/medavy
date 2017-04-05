@@ -2,9 +2,9 @@
  * Fonts
  * ------------------------------------- */
 // Google fonts
-@import url("https://fonts.googleapis.com/css?family=Shanti:400,300,700|Muli:400,100,300,700,500");
-$base-font: "Shanti", "Helvetica", "sans-serif";
-$header-font: "Muli", "Helvetica", "sans-serif";
+@import url("https://fonts.googleapis.com/css?family=Raleway:300, 400, 500|Apollo :400,100,300,600|Dancing Script: 400, 700");
+$base-font: "Raleway", "Helvetica", "sans-serif";
+$header-font: "Dancing Script", "Helvetica", "sans-serif";
 
 // Local fonts (uncomment following lines)
 // @font-face {
@@ -27,12 +27,12 @@ $base-height: 1.4;
 $brand-color: #DA4167;
 
 $white: #FFFFFF;
-$black: #4a4a4a;
+$black: #0F0F0F;
 $red: #DA4167;
 $blue: #7C98B3;
-$yellow: #FDB631;
+$yellow: #F8E386;
 $orange: #E67E22;
 $green: #658087;
 $gray: #373737;
-$light-gray: #ACCBE1;
+$light-gray: #C3C3C3;
 $dark-gray: #777777;

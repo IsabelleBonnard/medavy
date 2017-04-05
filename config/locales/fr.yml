@@ -14,14 +14,24 @@ fr:
     unauthaurized: "Vous n'êtes pas autorisé à faire cette action :/ Merci de bien vouloir vérifier votre connection !"
 
   root:
-    welcome: "Bienvenue à Médavy !"
+    welcome: "Un domaine au coeur de l'Histoire"
     history: "Histoire"
     know_more: "En savoir plus"
-    visuals: "Galerie photos"
-    discover: "Visionner"
+    visuals: "Photos"
+    discover: "Visionner la gallerie"
     play: "Quizz"
-    have_fun: "Participer"
+    have_fun: "Participer à notre jeu"
     questions: "Questions ?"
     contact: "Contactez-nous"
 
-
+  history:
+    origins: "Les origines"
+    origins_paragraph: "Situé à mi-chemin sur la route reliant Argentan à Sées, Médavy est dès le XIIème siècle une place forte du duché de Normandie. Peu d’informations subsistent sur la première forteresse qui fut probablement détruite entre 1417 et 1449 pendant l’invasion du royaume par les armées anglaises."
+    rouxel: "La constitution du domaine à partir du XVème siècle et la construction du château actuel (1704-1725): la famille Rouxel"
+    rouxel_paragraph: "Peu après la fin de la guerre de Cent ans, le domaine entre dans la famille Rouxel qui le conservera pendant environ deux cent cinquante ans (jusque vers 1730). Un premier château est construit et le domaine est agrandi par acquisition de terres avoisinantes. La richesse de la famille s’accroît après le ralliement de Pierre Rouxel à Henri IV : Pierre Rouxel est nommé baron en 1596 et il devient gouverneur d’Argentan, charge qui restera dans la famille jusqu’en 1725. Le cours de l’Orne est alors détourné pour remplir les douves d’eau vive, ce qui remonte le niveau du sol du nouveau château de 1,5 à 2 m par rapport à l’ancien château. Des tours sont construites aux quatre angles du quadrilatère de douves ; il n’en subsiste aujourd’hui que les tours Saint Jean et Saint Pierre. A la fin du XVIIème siècle, le château de Médavy sera momentanément délaissé par la famille Rouxel au profit de l’autre berceau de la famille, le château de Grancey en Bourgogne. De nombreux membres de la famille Rouxel s’illustreront dans les armes, et deux d’entre eux seront même nommés Maréchaux de France : Jacques Rouxel en 1651 et son petit-fils Jacques-Léonor Rouxel en 1724. C’est à ce dernier que nous devons l’essentiel du château actuel de Médavy, qu’il a fait construire entre 1704 et 1725, année de sa mort. Il s’agit d’une construction classique du début du XVIIIème siècle, fortement inspirée de Mansart."
+    montregard: "Les derniers grands travaux à Médavy et la révolution française: la famille de Monregard"
+    montregard_paragraph: "Le château passe entre diverses mains, avant d’être acquis en 1754 par Pierre Thiroux de Monregard, un des fermiers généraux du Roi, intendant et administrateur général des postes et relais de France, puis premier valet de chambre du Roi Louis XVI en 1789. C’est à cette époque qu’est créé le grand escalier et que seront construits le colombier et les communs (près du haras). La terre de Médavy est par ailleurs érigée en Comté en 1769. La révolution de 1789 provoque l’exil de la famille de Monregard : Pierre Thiroux de Monregard meurt à l’étranger en 1792, le mobilier est dispersé en 1794, et le château reste inhabité pendant dix ans. Pour pouvoir reconstituer le domaine de son père, Charles Thiroux de Monregard contracte des dettes importantes. Il rase tout ce qui restait encore de l’ancien château de la famille Rouxel, hormis la cuisine et les tours. Le château sera finalement vendu en 1812 sous la contrainte des créanciers. Il restera inhabité jusqu’en 1820."
+    laroque: "Propriété de la famille Laroque/Maussion pendant un siècle de 1820 à 1919"
+    laroque_paragraph: "Madame de la Roque acquiert le château en 1820, le remet en état et l’habite à l’année jusqu’à la fin de sa vie en 1855. Le château est à nouveau remis en état en 1867 par la comtesse de Maussion, une des héritières indirectes de Madame Laroque. A sa mort en 1896, le domaine de Médavy compte 325 hectares. Les héritiers de Jean de Maussion, fils de la comtesse de Maussion, vendent Médavy en 1919 à Henri de Peyerimhoff de Fontenelle, industriel, président du comité central des Houillères de France, et membre de l’Institut de France."
+    recent: "L’histoire récente de Médavy"
+    recent_paragraph: "Monsieur de Peyerimhoff résidera périodiquement à Médavy avec sa famille. Le château sera miraculeusement épargné par les bombardements lors des batailles du débarquement en 1944. Monsieur de Peyerimhoff meurt en 1953 et ses héritiers vendent aux enchères le domaine en plusieurs lots. Le château est acheté par le général de Grancey, gouverneur militaire des Invalides, qui le transforme pour accueillir sa famille durant les vacances. Passionné par l’histoire des Rouxel de Médavy, le général de Grancey rassemble au château de Médavy de nombreux objets et documents sur le second maréchal de Grancey et sa famille. A la mort du général de Grancey en 1975, Médavy est vendu à Monsieur Maurice Rey et à son épouse, déjà propriétaires depuis 1968 de la ferme et des communs où ils ont créé un haras. Au cours de l’été 1976, le château est ouvert pour la première fois au public. La grande tempête de décembre 1999 met gravement à mal toutes les toitures. Après la mort brutale de Monsieur Rey en 2004 à la suite d’une chute de cheval, sa veuve vend le château de Médavy à son actuel propriétaire. Depuis 2005, façades et toitures ont été entièrement refaites. Les pièces de réception ont été remeublées pour l’agrément de la visite qui se termine par une collection de cartes et globes."

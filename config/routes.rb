@@ -8,6 +8,9 @@ Rails.application.routes.draw do
 
     get 'contact' => 'pages#contact'
     get 'history' => 'pages#history'
+    get 'gallery' => 'pages#gallery'
+    get 'quizz' => 'pages#gallery'
+
     post 'pages/contact/send_contact_message' => 'pages#send_contact_message'
 
   end

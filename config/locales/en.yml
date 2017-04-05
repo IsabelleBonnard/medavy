@@ -14,12 +14,12 @@ en:
     unauthaurized: "You are not authorized to perform this action :/ Please check you're correctly signed in!"
 
   root:
-    welcome: "Welcome to Medavy !"
+    welcome: "A castle at the heart of French History"
     history: "History"
     know_more: "Know more"
-    visuals: "Photos Gallery"
+    visuals: "Photos"
     discover: "Discover"
     play: "Quizz"
     have_fun: "Play"
     questions: "Questions ?"
-    contact: "Contact-us"
+    contact: "Contact us"
