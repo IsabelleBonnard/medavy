@@ -1,0 +1,164 @@
+/* -------------------------------------
+ * Utilities classes
+ * These are examples of utilities classes
+ * Feel free to change them and create your own
+ * ------------------------------------- */
+
+// Paddings
+.padded {
+  padding-top: 5em;
+  padding-bottom: 5em;
+}
+
+.align-right {
+  text-align: right;
+}
+
+.light-padded {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+
+.light-margin {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.padded-sides {
+  padding-right: 5em;
+  padding-left: 5em;
+}
+
+.light-padded-sides {
+  padding-right: 1em;
+  padding-left: 1em;
+}
+
+.no-margin {
+  margin: 0px;
+}
+
+.italic {
+  font-style: italic;
+}
+
+// radius
+
+.border-radius {
+  border-radius: 10px;
+}
+
+// Backgrounds
+.bg-black {
+  background: $black;
+}
+.bg-grey {
+  background: $gray;
+}
+.bg-light-gray {
+  background: $light-gray;
+}
+.bg-blue {
+  background: $blue !important;
+}
+.bg-red {
+  background: $red;
+}
+.bg-white {
+  background: $white;
+}
+.bg-green {
+  background: $green;
+}
+
+// .bg-brand-color: {
+//   background: $brand-color;
+// }
+
+a:hover {
+  text-decoration: none;
+}
+
+.link-margin {
+  margin: 10px 0px;
+}
+
+.margin {
+  margin-top: 1em;
+  margin-bottom: 1em;
+}
+
+.margin-sides {
+  margin-left: 3px;
+  margin-right: 3px;
+}
+
+.margin-top {
+  margin-top: 10px !important;
+}
+
+.margin-bottom {
+ margin-bottom: 10px !important;
+}
+
+.large-margin-bottom {
+ margin-bottom: 25px !important;
+}
+
+
+.flex-center-column {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.red-font {
+  color: $red;
+}
+
+.white-font {
+ color: white;
+ a {
+  text-decoration: none;
+  color: white;
+ }
+}
+
+.align-left {
+  text-align: left;
+}
+
+// modal
+
+.modal-header {
+  background-color: $blue;
+  color: white;
+  text-align: left;
+}
+
+.modal-body {
+  color: $light-gray;
+  text-align: left;
+  font-size: 16px;
+  .text {
+    font-weight: lighter;
+  }
+}
+textarea {
+  resize: none;
+}
+
+//width
+
+.full-width {
+  width: 100%;
+}
+
+//stripe
+
+.stripe-button-el span {
+  background-color: $red !important;
+}
+
+

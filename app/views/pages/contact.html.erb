@@ -1,2 +1,19 @@
-<h1>Pages#contact</h1>
-<p>Find me in app/views/pages/contact.html.erb</p>
+<div class="container">
+  <h4 class="light-padded"><%= t('pages.contact.intro') %></h4>
+  <%= form_tag pages_contact_send_contact_message_path, method: :post do %>
+    <div class = "margin-top">
+      <%= text_area_tag "name_contact", nil, style:"border: none; padding: 5px 10px; width: 100%; border-radius: 5px", rows: 1, placeholder: t('pages.contact.name-placeholder') %>
+    </div>
+    <div class = "margin-top">
+      <%= text_area_tag "email_contact", nil, style:"border: none; padding: 3px 10px; width: 100%; border-radius: 5px", rows: 1, placeholder: t('pages.contact.email-placeholder') %>
+    </div>
+    <div class="margin-top">
+      <%= text_area_tag "message_contact", nil, style:"border: none; padding: 3px 10px; width: 100%; border-radius: 5px", rows: 7, placeholder: t('pages.contact.message-placeholder') %>
+    </div>
+    <div class="margin-top align-right">
+      <%= submit_tag t('pages.contact.send'), class: "btn btn-danger btn-lg margin-top" %>
+    </div>
+  <% end %>
+</div>
+
+

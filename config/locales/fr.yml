@@ -1,0 +1,27 @@
+fr:
+  activerecord:
+    models:
+      user: "Utilisateur"
+      event: "Activité"
+    attributes:
+      user:
+        first_name: "Prénom"
+        last_name: "Nom"
+        email: "Email"
+        birthday: "Date de naissance"
+
+  pundit:
+    unauthaurized: "Vous n'êtes pas autorisé à faire cette action :/ Merci de bien vouloir vérifier votre connection !"
+
+  root:
+    welcome: "Bienvenue à Médavy !"
+    history: "Histoire"
+    know_more: "En savoir plus"
+    visuals: "Galerie photos"
+    discover: "Visionner"
+    play: "Quizz"
+    have_fun: "Participer"
+    questions: "Questions ?"
+    contact: "Contactez-nous"
+
+

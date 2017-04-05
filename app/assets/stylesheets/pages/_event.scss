@@ -1,0 +1,403 @@
+.event-banner {
+  height: 40vh !important;
+  justify-content: center;
+  background-size: cover !important;
+  background-position: center center;
+  color: white;
+  position: relative;
+}
+
+.event-organizer-container {
+  height: 274px;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+  margin-top: 10px;
+}
+
+.passed-event {
+  position: absolute;
+  color: $red;
+  top: 10px;
+  right: 10px;
+  background: rgba(255, 255, 255, 0.5);
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.right-bottom {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  bottom: 10px;
+  right: 10px;
+  .link_admin {
+  margin-left: 10px;
+  color: white !important;
+  font-size: 16px;
+  opacity: 0.8;
+  }
+  .link_admin:hover {
+  opacity: 1;
+  }
+}
+
+.right-top {
+  position: absolute;
+  display: flex;
+  align-items: center;
+  top: 10px;
+  right: 10px;
+  .link_admin {
+  margin-left: 10px;
+  color: white !important;
+  font-size: 16px;
+  opacity: 0.8;
+  }
+  .link_admin:hover {
+  opacity: 1;
+  }
+}
+
+.title-btn {
+  margin-left: 20px;
+  font-size: 20px;
+}
+
+// media queries sur taille du titre
+
+// smartphones
+.title-event h1 {
+  margin-top: 0px !important;
+  margin-bottom: 0px !important;
+  margin-right: 20px;
+  font-size: 30px;
+}
+
+.title-event h2 {
+  font-size: 16px;
+}
+
+// number of places left
+
+number_round_red {
+  background-color: $orange;
+  border-radius: 50%;
+  padding-right: 5px;
+  padding-left: 5px;
+  border: 0.1em solid white;
+}
+
+number_round_green {
+  background-color: $blue;
+  border-radius: 50%;
+  padding-right: 5px;
+  padding-left: 5px;
+  border: 0.1em solid white;
+}
+
+// tablets
+@media (min-width: 768px) {
+  .title-event h1 {
+  font-size: 40px !important;
+  }
+  .title-event h2 {
+  font-size: 30px !important;
+  }
+  number_round_red, number_round_green {
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+}
+
+@media (min-width: 992px) {
+  .title-event h1 {
+  font-size: 58px !important;
+  }
+  .title-event h2 {
+  font-size: 40px !important;
+  }
+  number_round_red, number_round_green {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+}
+
+@media (min-width: 1200px) {
+  .title-event h1 {
+  font-size: 58px !important;
+  }
+  .title-event h2 {
+  font-size: 40px !important;
+  }
+  number_round_red, number_round_green {
+    padding-right: 12px;
+    padding-left: 12px;
+  }
+  .add-calendar {
+   margin-left: 35px;
+  }
+}
+
+// media queries sur l'event box
+
+.event-banner-event-show {
+  // all screen sizes {
+  .icon-event-show {
+    color: $red;
+  }
+  .item-event-show {
+    text-align: left;
+  }
+  .price {
+    display: flex;
+    align-items: center;
+  }
+
+  // smart-phones (xs)
+  @media (max-width: $screen-sm-min) {
+    .calendar-box, .description-box, .price-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .icon-event-show {
+      width: 82px;
+      flex: 0 0 30%;
+    }
+    .item-event-show {
+      flex: 0 0 70%;
+      text-align: left;
+    }
+    h1 {
+      font-size: 30px;
+      margin: 0px;
+    }
+  }
+  // tablettes (sm)
+  @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
+    .calendar-box, .description-box, .price-box {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .icon-event-show {
+      width: 82px;
+      flex: 0 0 30%;
+    }
+    .item-event-show {
+      flex: 0 0 70%;
+      text-align: left;
+    }
+    h1 {
+      font-size: 30px;
+      margin: 0px;
+    }
+  }
+
+  // small, large and extra-large laptops (md, lg & xl)
+
+  @media (min-width: $screen-md-min) {
+    .top-boxes {
+      display: flex;
+      justify-content: space-between;
+      align-items: top;
+    }
+    .calendar-box {
+      flex: 0 0 25%;
+    }
+    .description-box {
+     flex: 1 0 0;
+    }
+    .price-box {
+      flex: 0 0 20%;
+    }
+    .icon-event-show {
+      text-align: center;
+    }
+    .item-event-show {
+      text-align: left;
+    }
+    .price {
+     text-align: center !important;
+    }
+    h1 {
+      font-size: 30px;
+      margin: 0px;
+    }
+  }
+}
+
+
+.flex-container{
+  padding: 0;
+  margin: 0;
+  list-style: none;
+  -ms-box-orient: horizontal;
+  display: -ms-flexbox;
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: flex;
+  space-around: center;
+  align-items: center;
+}
+
+.flex-item {
+  text-align: center;
+}
+
+.center {
+  -webkit-justify-content: center;
+  justify-content: center;
+}
+
+.event-url {
+  font-size: 16px;
+  border-radius: 5px;
+  margin-right: 5px;
+  margin-bottom: 10px;
+  padding:8px 0px 0px 10px;
+  background-color: white;
+  color: #a29f9f;
+  font-weight: bolder;
+  p {
+    margin: 0px;
+  }
+  height: 37px;
+}
+
+.url-copy-button {
+  height: 37px;
+}
+
+.share-link-container {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.owner-description-price {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 35px;
+
+  .item{
+    background-color: white;
+    padding: 10px;
+    border-radius: 5px;
+    align-self: auto;
+
+  }
+  .little-item{
+    margin: 0 20px;
+    flex: 0 0 20%;
+  }
+  .big-item{
+    width: 60%;
+  }
+  .address-hour{
+    color: $red;
+    font-weight: bold;
+  }
+
+  h1{
+    color:$red;
+  }
+}
+
+.event-owner {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.event-participant {
+  background-color:white;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+}
+
+.color-red {
+  color: $red;
+}
+
+.flex-center {
+  justify-content: center;
+  align-item: center;
+}
+
+.participant_card {
+  display:flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  padding: 30px 30px 30px 0px;
+  p{
+    color: white ;
+  }
+}
+
+.subscribe-link {
+  opacity: 0.8;
+  cursor: pointer;
+}
+
+.subscribe-link:hover {
+  opacity: 1;
+}
+
+.popover-content {
+  font-size: 18px;
+  color: $blue;
+}
+
+.participants_master_card {
+  display:flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: wrap;
+
+}
+
+.annulations {
+  h3{
+    padding:0px !important;
+    margin:0px !important;
+  }
+  .title-annulation{
+    margin-top: 11px !important;
+    padding-bottom:15px !important;
+    padding-top: 15px;
+  }
+  p{
+    padding-bottom: 15px;
+  }
+}
+
+.no-padding-on-p{
+  padding-bottom: 0px !important;
+}
+
+.description-center{
+  text-align: center;
+
+}
+
+h3 {
+  font-size: 22px;
+}
+
+
+
+.photo-forum {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  background-size: cover !important;
+  background-position: center center;
+}
+

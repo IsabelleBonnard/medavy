@@ -1,2 +1,49 @@
-<h1>Pages#home</h1>
-<p>Find me in app/views/pages/home.html.erb</p>
+<div class="banner" style="background-image: linear-gradient(-0deg, rgba(62, 255, 86, 0.38) 0%, rgba(0, 231, 255, 0.2) 50%), url('<%= image_path "banner.JPG" %>');">
+  <div class="banner-content">
+    <h1> <%= t('root.welcome')%> </h1>
+  </div>
+</div>
+<!-- cards-home -->
+<div class="wrapper wrapper-home">
+  <div class="container narrow">
+    <div class=" text-center features">
+      <div class="row">
+        <h2 class="title"> <% %></h2>
+        <div class="col-xs-12 col-sm-6 col-md-3 ">
+          <div class="card-home">
+            <i class="fi-plus"></i>
+            <h4> <%= t('root.history') %></h4>
+            <p><%= t('root.know_more') %></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card-home">
+            <i class="fi-photo"></i>
+            <h4><%= t('root.visuals')%></h4>
+            <p><%= t('root.discover')%></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card-home">
+            <i class="fi-play"></i>
+            <h4><%= t('root.play')%></h4>
+            <p><%= t('root.have_fun') %></p>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-3">
+          <div class="card-home">
+            <i class="fi-mail"></i>
+            <h4><%= t('root.questions')%></h4>
+            <p><%= t('root.contact')%></p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  var rotator_text = ["medavy", "medavy"]
+</script>
+
+
