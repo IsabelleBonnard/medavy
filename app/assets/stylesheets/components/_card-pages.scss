@@ -20,6 +20,7 @@ div {
  .card-pages p {
   font-size: 14px;
   color: $light-gray;
+  text-align: justify
  }
 
 .card-pages i{
@@ -30,3 +31,35 @@ div {
 .image-pages {
   width: 100%;
 }
+
+.subtitle {
+  color: $dark-gray !important;
+  font-weight: bold;
+  font-size: 14px;
+  margin-bottom: 20px;
+}
+
+.timeline {
+  // position: fixed;
+  text-align: left;
+  // position: absolute;
+  // margin-top: -18%;
+  position: fixed;
+  top: 110px;
+  left: 10;
+  width: 20%;
+}
+
+.timeline-title {
+  border-bottom: solid 3px $dark-gray;
+  padding: 10px;
+  font-weight: bold;
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.timeline li {
+  // position: fixed;
+  list-style-type: circle;
+}
+

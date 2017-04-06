@@ -9,6 +9,12 @@ Rails.application.routes.draw do
     get 'contact' => 'pages#contact'
     get 'history' => 'pages#history'
     get 'gallery' => 'pages#gallery'
+    get 'gallery/work' => 'pages#work'
+    get 'gallery/interiors' => 'pages#interiors'
+    get 'gallery/exterior' => 'pages#exterior'
+    get 'gallery/SkyViews' => 'pages#sky_views'
+    get 'gallery/MedavyByNight' => 'pages#medavy_by_night'
+
     get 'quizz' => 'pages#gallery'
 
     post 'pages/contact/send_contact_message' => 'pages#send_contact_message'

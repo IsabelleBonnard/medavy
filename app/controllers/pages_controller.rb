@@ -13,6 +13,22 @@ class PagesController < ApplicationController
   def gallery
   end
 
+  def exterior
+  end
+
+  def interiors
+  end
+
+  def medavy_by_night
+  end
+
+  def sky_views
+  end
+
+  def gallery
+  end
+
+
   def send_contact_message
     @email_contact = params[:email_contact]
     @message_contact = params[:message_contact]
