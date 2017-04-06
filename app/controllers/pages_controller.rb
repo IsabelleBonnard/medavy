@@ -1,5 +1,5 @@
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:home, :contact, :about, :history, :gallery, :send_contact_message]
+  skip_before_action :authenticate_user!, only: [:home, :contact, :about, :history, :gallery, :exterior, :interiors, :medavy_by_night, :sky_views, :work, :send_contact_message]
 
   def home
   end
@@ -25,7 +25,7 @@ class PagesController < ApplicationController
   def sky_views
   end
 
-  def gallery
+  def work
   end
 
 
