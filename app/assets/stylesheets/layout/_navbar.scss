@@ -19,6 +19,17 @@
   width: 100%;
 }
 
+// liseret jaune
+.liseret-fixed {
+  background: $yellow;
+  height: 5px;
+  z-index: 101;
+  width: 100%;
+  position: fixed;
+  left: 0px;
+  top: 90px;
+}
+
 /* Optional class to fix the navbar on top */
 .flag {
   height: 15px;
