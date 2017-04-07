@@ -1,8 +1,30 @@
+// Image gallery background : video si tablette ou laptop
+
 #video-background {
   min-width: 100%;
   min-height: 100%;
   z-index: 3;
   position: absolute;
+}
+
+@media (max-width: $screen-sm-min) {
+  #video-background {
+    visibility: hidden;
+  }
+}
+
+// Image gallery background : image si smartphone
+
+#image-background {
+  width: 100%;
+  z-index: 3;
+  position: absolute;
+}
+
+@media (min-width: $screen-sm-min) {
+  #image-background {
+    visibility: hidden;
+  }
 }
 
 .cards-video {
