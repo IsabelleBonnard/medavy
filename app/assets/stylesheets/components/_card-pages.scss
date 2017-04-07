@@ -32,6 +32,21 @@ div {
   width: 100%;
 }
 
+.cl-image-container {
+  background-color: $black;
+  margin: 10px;
+  height: 20vw;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.cl-image-pages {
+  max-width: 100%;
+  max-height: 100%;
+  text-align: center;
+}
+
 .subtitle {
   color: $dark-gray !important;
   font-weight: bold;
