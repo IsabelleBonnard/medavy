@@ -30,28 +30,28 @@ class PagesController < ApplicationController
   end
 
   def interiors
-    url = "http://res.cloudinary.com/dsosadxbk/image/list/interiors.json"
+    url = "http://res.cloudinary.com/dsosadxbk/image/list/castle.json"
     my_json = JSON.parse(open(url).read)
     resources = my_json["resources"]
     @ids = resources.map {|res| res["public_id"]}
   end
 
   def medavy_by_night
-    url = "http://res.cloudinary.com/dsosadxbk/image/list/work.json"
+    url = "http://res.cloudinary.com/dsosadxbk/image/list/night.json"
     my_json = JSON.parse(open(url).read)
     resources = my_json["resources"]
     @ids = resources.map {|res| res["public_id"]}
   end
 
   def sky_views
-    url = "http://res.cloudinary.com/dsosadxbk/image/list/sky.json"
+    url = "http://res.cloudinary.com/dsosadxbk/image/list/skyviews.json"
     my_json = JSON.parse(open(url).read)
     resources = my_json["resources"]
     @ids = resources.map {|res| res["public_id"]}
   end
 
   def work
-    url = "http://res.cloudinary.com/dsosadxbk/image/list/night.json"
+    url = "http://res.cloudinary.com/dsosadxbk/image/list/work.json"
     my_json = JSON.parse(open(url).read)
     resources = my_json["resources"]
     @ids = resources.map {|res| res["public_id"]}

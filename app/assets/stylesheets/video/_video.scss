@@ -12,6 +12,35 @@
   bottom: 10px;
 }
 
+// Card video links in Gallery pages
+
+.gallery-links {
+  display: flex;
+  float: right;
+  align-items: center;
+}
+
+.card-video-link {
+  background-color: white;
+  height: 40px;
+  width: 40px;
+  margin: 5px;
+  padding: 0px 10px;
+  margin-bottom: 30px;
+  opacity: 0.9;
+}
+
+.card-video-link i{
+  color: $yellow;
+  font-size: 30px;
+}
+
+.card-video:hover {
+  opacity: 1;
+}
+
+// Card video in Gallery landing page
+
 .card-video {
   background-color: white;
   height: 190px;
