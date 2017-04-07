@@ -1,49 +1,16 @@
 <div class = "container narrow margin-top-height-navbar">
   <h1 class = "text-center"><%= t('gallery.sky_views') %></h1>
+  <%= render "shared/gallery-links" %>
   <div class="row">
-    <div class="col-xs-6">
-      <%= link_to gallery_path do %>
-        <div class="back-gallery-button">
-          <i class="fi-rewind"></i> <%= t('gallery.back') %>
+    <% @idvideos.each do |id| %>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-sm-3">
+        <div class="cl-image-container">
+          <div class="cl-image-pages">
+            <%= video_tag("http://res.cloudinary.com/dsosadxbk/video/upload/v1491490317/"+id+".mp4", autoplay: true, muted: true, loop: true, class: "cl-image-pages") %>
+          </div>
         </div>
-      <% end %>
-    </div>
-    <!-- liens vers les autres pages de la gallerie -->
-    <div class="col-xs-6">
-      <div class="gallery-links">
-        <%= link_to gallery_exterior_path do %>
-          <div class="card-video-link">
-            <i class="fi-foot"></i>
-          </div>
-        <% end %>
-
-        <%= link_to gallery_interiors_path do %>
-          <div class="card-video-link">
-            <i class="fi-crown"></i>
-          </div>
-        <% end %>
-
-        <%= link_to gallery_work_path do %>
-          <div class="card-video-link">
-            <i class="fi-flag"></i>
-          </div>
-        <% end %>
-
-        <%= link_to gallery_SkyViews_path do %>
-          <div class="card-video-link">
-            <i class="fi-play"></i>
-          </div>
-        <% end %>
-
-        <%= link_to gallery_MedavyByNight_path do %>
-          <div class="card-video-link">
-            <i class="fi-lightbulb"></i>
-          </div>
-        <% end %>
       </div>
-    </div>
-  </div>
-  <div class="row">
+    <% end %>
     <% @ids.each do |id| %>
       <div class="col-xs-12 col-sm-6 col-md-4 col-sm-3">
         <div class="cl-image-container">

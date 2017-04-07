@@ -48,6 +48,11 @@ class PagesController < ApplicationController
     my_json = JSON.parse(open(url).read)
     resources = my_json["resources"]
     @ids = resources.map {|res| res["public_id"]}
+
+    url = "http://res.cloudinary.com/dsosadxbk/video/list/videodrone.json"
+    my_json = JSON.parse(open(url).read)
+    resources = my_json["resources"]
+    @idvideos = resources.map {|res| res["public_id"]}
   end
 
   def work

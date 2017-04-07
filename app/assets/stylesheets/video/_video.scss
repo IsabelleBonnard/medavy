@@ -16,7 +16,6 @@
 
 .gallery-links {
   display: flex;
-  float: right;
   align-items: center;
 }
 
@@ -37,6 +36,22 @@
 
 .card-video:hover {
   opacity: 1;
+}
+
+// icones sur la droite quand plus grand que smartphones
+
+@media (min-width: $screen-sm-min) {
+  .gallery-links {
+     float: right;
+   }
+}
+
+// icones centrées quand smartphones
+
+@media (max-width: $screen-sm-min) {
+  .gallery-links {
+     justify-content: space-around;
+   }
 }
 
 // Card video in Gallery landing page

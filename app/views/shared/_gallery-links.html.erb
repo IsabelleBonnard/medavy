@@ -1,0 +1,44 @@
+<div class="row">
+  <!-- Retour à la gallerie -->
+  <div class="col-xs-12 col-sm-6">
+    <%= link_to gallery_path do %>
+      <div class="back-gallery-button">
+        <i class="fi-rewind"></i> <%= t('gallery.back') %>
+      </div>
+    <% end %>
+  </div>
+  <!-- liens vers les autres pages de la gallerie -->
+  <div class="col-xs-12 col-sm-6">
+    <div class="gallery-links">
+      <%= link_to gallery_exterior_path do %>
+        <div class="card-video-link">
+          <i class="fi-foot"></i>
+        </div>
+      <% end %>
+
+      <%= link_to gallery_interiors_path do %>
+        <div class="card-video-link">
+          <i class="fi-crown"></i>
+        </div>
+      <% end %>
+
+      <%= link_to gallery_work_path do %>
+        <div class="card-video-link">
+          <i class="fi-flag"></i>
+        </div>
+      <% end %>
+
+      <%= link_to gallery_SkyViews_path do %>
+        <div class="card-video-link">
+          <i class="fi-play"></i>
+        </div>
+      <% end %>
+
+      <%= link_to gallery_MedavyByNight_path do %>
+        <div class="card-video-link">
+          <i class="fi-lightbulb"></i>
+        </div>
+      <% end %>
+    </div>
+  </div>
+</div>
