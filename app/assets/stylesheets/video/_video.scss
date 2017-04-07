@@ -9,7 +9,7 @@
 
 @media (max-width: $screen-sm-min) {
   #video-background {
-    visibility: hidden;
+    display: none;
   }
 }
 
@@ -17,15 +17,18 @@
 
 #image-background {
   width: 100%;
+  min-height: 100%;
   z-index: 3;
   position: absolute;
 }
 
 @media (min-width: $screen-sm-min) {
   #image-background {
-    visibility: hidden;
+    display: none;
   }
 }
+
+// cards videos si tablette ou laptop
 
 .cards-video {
   position: absolute;
@@ -34,7 +37,34 @@
   bottom: 10px;
 }
 
-// Card video links in Gallery pages
+@media (max-width: $screen-sm-min) {
+  .cards-video {
+    display: none;
+  }
+}
+
+.gallery-links-smartphones {
+  position: absolute;
+  z-index: 4;
+  width: 100% !important;
+  bottom: 30px;
+  h4 {
+    font-size: 12px;
+    font-weight: thiner;
+    color: $white;
+    width: 40px;
+    height: 20px;
+    text-align: center;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .gallery-links-smartphones {
+    display: none;
+  }
+}
+
+// Card video links in Gallery pages or in gallery langing page si smartphone
 
 .gallery-links {
   display: flex;
@@ -47,7 +77,6 @@
   width: 40px;
   margin: 5px;
   padding: 0px 10px;
-  margin-bottom: 30px;
   opacity: 0.9;
 }
 
