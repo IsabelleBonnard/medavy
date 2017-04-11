@@ -56,3 +56,15 @@ en:
     medavy_by_night: "Medavy by night"
     sky_views: "Aerial views"
     back: "Back to gallery"
+
+  questions:
+    congratulations: "Bravo ! Please enter your name to record your score"
+    username: "Player"
+    length: "Time taken"
+    correct: "Correct answers"
+    score: "Score"
+    date: "Date"
+    submit: "Save"
+
+
+

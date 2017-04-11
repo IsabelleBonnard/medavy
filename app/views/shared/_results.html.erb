@@ -1,0 +1,25 @@
+
+<table class = 'table_results'>
+  <thead>
+    <tr>
+      <th><%= t('questions.rank') %></th>
+      <th><%= t('questions.username') %></th>
+      <th><%= t('questions.score') %></th>
+      <th><%= t('questions.length') %></th>
+      <th><%= t('questions.correct') %></th>
+      <th><%= t('questions.date') %></th>
+    </tr>
+  </thead>
+  <% @quizz_records.each_with_index do |quizz_record, index| %>
+    <tbody>
+      <tr>
+        <td><%= index + 1 %></td>
+        <td><%= quizz_record.username %></td>
+        <td><%= quizz_record.score.round(2) %></td>
+        <td><%= quizz_record.length.round(2) %> min</td>
+        <td><%= quizz_record.correct %> / 10</td>
+        <td><%= quizz_record.date.strftime("%m/%d/%Y") %></td>
+      </tr>
+    </tbody>
+  <% end %>
+</table>

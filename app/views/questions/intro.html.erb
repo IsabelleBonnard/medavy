@@ -1,0 +1,10 @@
+<div class="container margin-top-height-navbar">
+  <%= form_tag(questions_path(@question), method: "post") do %>
+    <input name="start_date" type="hidden" value=<%= DateTime.now %> />
+    <input name="correct" type="hidden" value=<%= 0 %> />
+    <input name="commit" type="submit" class="submit_questions" value="Start quizz" />
+  <% end %>
+  <% if @quizz_records.length > 0 %>
+    <%= render 'shared/results', :locals => {@quizz_records => @quizz_records} %>
+  <% end %>
+</div>

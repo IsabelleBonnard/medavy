@@ -10,10 +10,36 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20161128114946) do
+ActiveRecord::Schema.define(version: 20170411122532) do
 
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
+
+  create_table "choices", force: :cascade do |t|
+    t.string   "intitule"
+    t.boolean  "correct"
+    t.integer  "question_id"
+    t.datetime "created_at",  null: false
+    t.datetime "updated_at",  null: false
+    t.index ["question_id"], name: "index_choices_on_question_id", using: :btree
+  end
+
+  create_table "questions", force: :cascade do |t|
+    t.string   "intitule"
+    t.string   "answer"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
+  create_table "quizz_records", force: :cascade do |t|
+    t.string   "username"
+    t.float    "length"
+    t.integer  "correct"
+    t.float    "score"
+    t.datetime "date"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "users", force: :cascade do |t|
     t.string   "email",                  default: "",    null: false
@@ -33,4 +59,5 @@ ActiveRecord::Schema.define(version: 20161128114946) do
     t.index ["reset_password_token"], name: "index_users_on_reset_password_token", unique: true, using: :btree
   end
 
+  add_foreign_key "choices", "questions"
 end

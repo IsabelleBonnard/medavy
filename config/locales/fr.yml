@@ -56,3 +56,12 @@ fr:
     medavy_by_night: "Medavy by night"
     sky_views: "Vues du ciel"
     back: "Retour à la gallery"
+
+  questions:
+    congratulations: "Bravo ! Entrez votre votre nom pour entrer dans l'histoire :)"
+    username: "Joueur"
+    length: "Temps pris"
+    correct: "Bonnes réponses"
+    score: "Score"
+    date: "Date"
+    submit: "Enregistrer"
