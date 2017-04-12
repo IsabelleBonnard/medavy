@@ -58,14 +58,16 @@ fr:
     back: "Retour à la gallery"
 
   questions:
-    intro: "Bienvenue dans le quizz de Medavy!"
+    intro: "Bienvenue dans le quizz de Médavy!"
     intro_bis: "Appuyez sur 'Jouer' pour démarrer une nouvelle partie. Attention : la rapidité compte !"
     legends_table: "Le recap des meilleurs scores"
     start: "Jouer"
     congratulations: "Bravo ! Entrez votre votre nom pour entrer dans l'histoire :)"
+    rank: "Rang"
     username: "Joueur"
     length: "Temps pris"
     correct: "Bonnes réponses"
+    name: "Votre nom"
     score: "Score"
     date: "Date"
     submit: "Enregistrer"

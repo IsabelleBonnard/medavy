@@ -63,12 +63,14 @@ en:
     start: "Start"
     legends_table: "Best scores' recap"
     congratulations: "Bravo ! Please enter your name to record your score"
+    rank: "Rank"
     username: "Player"
     length: "Time taken"
     correct: "Correct answers"
     score: "Score"
     date: "Date"
     submit: "Save"
+    name: "Your name"
 
 
 

@@ -1,15 +1,17 @@
 <div class="container margin-top-height-navbar">
-  <p><%= t('questions.congratulations') %></p>
-  <p><%= t('questions.length') %> : <%= @quizz_record.length.round(2) %> min</p>
-  <p><%= t('questions.correct') %> : <%= @quizz_record.correct %> / 10</p>
-  <p><%= t('questions.score') %> : <%= @quizz_record.score.round(2) %></p>
+  <h1><%= t('questions.congratulations') %></h1>
+  <div class="result-card">
+    <p><%= t('questions.length') %> : <%= @quizz_record.length.round(2) %> min</p>
+    <p><%= t('questions.correct') %> : <%= @quizz_record.correct %> / 10</p>
+    <p><%= t('questions.score') %> : <%= @quizz_record.score.round(2) %></p>
+  </div>
   <%= form_for(@quizz_record, url: quizz_records_create_path) do |f| %>
-    <%= f.text_field :username %>
+    <%= f.text_field :username, placeholder: t('questions.name'), class: "field-name" %>
     <%= f.hidden_field :length, value: @quizz_record.length %>
     <%= f.hidden_field :correct, value: @quizz_record.correct %>
     <%= f.hidden_field :score, value: @quizz_record.score %>
     <%= f.hidden_field :date, value: @quizz_record.date %>
-    <%= f.submit t('questions.submit'), class: "btn btn-primary" %>
+    <%= f.submit t('questions.submit'), class: "btn-play" %>
   <% end %>
   <%= render 'shared/results', :locals => {@quizz_records => @quizz_records} %>
 </div>

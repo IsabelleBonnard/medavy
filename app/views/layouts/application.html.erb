@@ -38,7 +38,11 @@
   </head>
   <body class="<%= "#{controller_path}-#{action_name}" %>">
    <div class="wrapper">
-      <%= render 'shared/navbar' %>
+      <% if action_name == "play" ||  controller_name == "quizz_records" %>
+        <%= render 'shared/navbar_without_i18n' %>
+      <% else %>
+        <%= render 'shared/navbar' %>
+      <% end %>
       <%= render 'shared/flashes' %>
       <%= yield %>
     </div>
