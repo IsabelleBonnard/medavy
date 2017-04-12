@@ -58,6 +58,10 @@ en:
     back: "Back to gallery"
 
   questions:
+    intro: "Welcome to Medavy quizz!"
+    intro_bis: "Please press 'Start' to launch a game. Beware: Speed matters!"
+    start: "Start"
+    legends_table: "Best scores' recap"
     congratulations: "Bravo ! Please enter your name to record your score"
     username: "Player"
     length: "Time taken"

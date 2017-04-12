@@ -63,3 +63,21 @@
     border-bottom: solid 3px $yellow;
   }
 }
+
+.btn-play {
+  background-color: $white;
+  border: solid 1px $dark-gray;
+  color: $dark-gray;
+  opacity: 0.9;
+  border-radius: 5px;
+}
+
+.btn-play:hover {
+  background-color: $white;
+  border-color: solid 1px $light-gray;
+  border-radius: 5px;
+  color: $dark-gray;
+  opacity: 1;
+}
+
+.btn-play:focus {outline:0;}
