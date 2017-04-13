@@ -15,21 +15,21 @@
         <% end %>
       </div>
     <% end %>
+  </div>
+  <div class = "col-xs-12">
     <div class = "answer hidden">
-      <div class="col-xs-12 col-sm-8">
+      <div class="answer-text">
         <%= @question.answer %>
       </div>
-      <div class="col-xs-12 col-sm-4">
-        <% if @question.id < @first_question_id + 9 %>
-          <%= link_to questions_path(@question.id + 1) do %>
-            <div class="btn-play"> <%= t('questions.next') %> </div>
-          <% end %>
-        <% else %>
-          <%= link_to results_path do %>
-            <div class="btn-play"> <%= t('questions.next') %> </div>
-          <% end %>
+      <% if @question.id < @first_question_id + 9 %>
+        <%= link_to questions_path(@question.id + 1) do %>
+          <div class="btn-play"> <%= t('questions.next') %> </div>
         <% end %>
-      </div>
+      <% else %>
+        <%= link_to results_path do %>
+          <div class="btn-play"> <%= t('questions.next') %> </div>
+        <% end %>
+      <% end %>
     </div>
   </div>
 </div>
