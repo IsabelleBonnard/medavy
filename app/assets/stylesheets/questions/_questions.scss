@@ -28,8 +28,6 @@
   background-color: white;
   border: solid 3px white;
   margin: 5px;
-  padding: 25px 27px;
-  margin-bottom: 30px;
   opacity: 0.9;
   height: 100%;
 }
@@ -119,6 +117,10 @@
   h1 {
     font-size: 30px !important;
   }
+  .card-choices {
+    padding: 5px 5px;
+    margin-bottom: 10px;
+  }
 }
 // tablettes (sm)
 
@@ -129,6 +131,10 @@
   }
   h1 {
     font-size: 35px !important;
+  }
+  .card-choices {
+     padding: 15px 15px;
+     margin-bottom: 10px;
   }
 }
 
@@ -142,6 +148,10 @@
   h1 {
     font-size: 40px !important;
   }
+  .card-choices {
+     padding: 25px 27px;
+     margin-bottom: 30px;
+  }
 }
 
 // large laptops (lg and xl)
@@ -153,6 +163,10 @@
   }
   h1 {
     font-size: 40px !important;
+  }
+  .card-choices {
+     padding: 25px 27px;
+     margin-bottom: 30px;
   }
 }
 
