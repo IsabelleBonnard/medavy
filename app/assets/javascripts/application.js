@@ -17,14 +17,14 @@
 $(function () {
   $('.incorrect').click(function(event) {
     $(this).addClass('red-border');
-    $('.incorrect').removeClass('incorrect');
-    $('.correct').removeClass('correct');
+    $('.incorrect').removeClass('incorrect').off('click');;
+    $('.correct').removeClass('correct').off('click');;
     $('.answer').removeClass('hidden');
   });
   $('.correct').click(function(event) {
     $(this).addClass('green-border');
-    $('.incorrect').removeClass('incorrect');
-    $('.correct').removeClass('correct');
+    $('.incorrect').removeClass('incorrect').off('click');;
+    $('.correct').removeClass('correct').off('click');;
     $('.answer').removeClass('hidden');
     var question_id = $(this).attr('id');
     console.log(question_id);
