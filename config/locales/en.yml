@@ -14,14 +14,15 @@ en:
     unauthaurized: "You are not authorized to perform this action :/ Please check you're correctly signed in!"
 
   root:
-    welcome: "A castle at the heart of French History"
+    intro: "A castle at the heart of French History"
+    welcome: "Welcome to Médavy!"
     history: "History"
     know_more: "Know more"
     visuals: "Photos"
     discover: "Discover"
     play: "Quizz"
     have_fun: "Play"
-    questions: "Questions ?"
+    questions: "Questions"
     contact: "Contact us"
 
   history:

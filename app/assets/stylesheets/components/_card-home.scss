@@ -32,3 +32,19 @@ div {
 .card-home:hover {
   opacity: 1;
 }
+
+
+// smart-phones (xs)
+@media (max-width: $screen-sm-min) {
+  .card-home h4 {
+    font-size: 20px;
+  }
+  .card-home p {
+    font-size: 12px;
+  }
+  .card-home {
+    padding: 5px;
+    height: 188px;
+  }
+}
+

@@ -14,14 +14,15 @@ fr:
     unauthaurized: "Vous n'êtes pas autorisé à faire cette action :/ Merci de bien vouloir vérifier votre connection !"
 
   root:
-    welcome: "Un domaine au coeur de l'Histoire"
+    intro: "Un domaine au coeur de l'Histoire"
+    welcome: "Bienvenue à Médavy !"
     history: "Histoire"
     know_more: "En savoir plus"
     visuals: "Photos"
     discover: "Visionner la gallerie"
     play: "Quizz"
     have_fun: "Participer à notre jeu"
-    questions: "Questions ?"
+    questions: "Questions"
     contact: "Contactez-nous"
 
   history:
