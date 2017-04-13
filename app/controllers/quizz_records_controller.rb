@@ -3,8 +3,8 @@ class QuizzRecordsController < ApplicationController
   def new
     @quizz_records = QuizzRecord.all
     @quizz_record = QuizzRecord.new
-    @quizz_record.length = (DateTime.now - params[:start_date].to_datetime)*24*60
-    @quizz_record.correct = params[:correct].to_i
+    @quizz_record.length = (DateTime.now - session[:start_date].to_datetime)*24*60
+    @quizz_record.correct = session[:question_1] + session[:question_2] + session[:question_3] + session[:question_4] + session[:question_5] + session[:question_6] + session[:question_7] + session[:question_8] + session[:question_9] + session[:question_10]
     @quizz_record.score = score(@quizz_record.length, @quizz_record.correct)
     @quizz_record.date = DateTime.now
   end

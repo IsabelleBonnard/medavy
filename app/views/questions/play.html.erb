@@ -1,41 +1,35 @@
 <div class="container margin-top-height-navbar">
-<h1>Question n° <%= @question.id % 10 %>/10</h1>
+<h1>Question n° <%= @question.id %>/10</h1>
 <div class = "intitule"><%= @question.intitule %></div>
   <div class="row">
     <% @choices.each_with_index do |choice| %>
       <div class="col-xs-12 col-sm-6">
-        <div class = "card-choices">
-          <% if @question.id < @first_question_id + 8 %>
-            <% if choice.correct %>
-              <%= form_tag(questions_path(@question.id + 1), method: "post") do %>
-                <input name="start_date" type="hidden" value=<%= params[:start_date] %> />
-                <input name="correct" type="hidden" value=<%= params[:correct].to_i + 1 %> />
-                <input name="commit" type="submit" class="submit_questions" value="<%= choice.intitule %>" />
-              <% end %>
-            <% else %>
-              <%= form_tag(questions_path(@question.id + 1), method: "post") do %>
-                <input name="start_date" type="hidden" value=<%= params[:start_date] %> />
-                <input name="correct" type="hidden" value=<%= params[:correct].to_i %> />
-                <input name="commit" type="submit" class="submit_questions" value="<%= choice.intitule %>" />
-              <% end %>
-            <% end %>
-          <% else %>
-            <% if choice.correct %>
-              <%= form_tag(results_path, method: "post") do %>
-                <input name="start_date" type="hidden" value=<%= params[:start_date] %> />
-                <input name="correct" type="hidden" value=<%= params[:correct].to_i + 1 %> />
-                <input name="commit" type="submit" class="submit_questions" value="<%= choice.intitule %>" />
-              <% end %>
-            <% else %>
-              <%= form_tag(results_path, method: "post") do %>
-                <input name="start_date" type="hidden" value=<%= params[:start_date] %> />
-                <input name="correct" type="hidden" value=<%= params[:correct].to_i %> />
-                <input name="commit" type="submit" class="submit_questions" value="<%= choice.intitule %>" />
-              <% end %>
-            <% end %>
-          <% end %>
-        </div>
+        <% if choice.correct %>
+          <div class = "correct card-choices" id = "<%= @question.id % 10 %>">
+            <%= choice.intitule %>
+          </div>
+        <% else %>
+          <div class = "incorrect card-choices" id = "<%= @question.id % 10 %>">
+            <%= choice.intitule %>
+          </div>
+        <% end %>
       </div>
     <% end %>
+    <div class = "answer hidden">
+      <div class="col-xs-12 col-sm-8">
+        <%= @question.answer %>
+      </div>
+      <div class="col-xs-12 col-sm-4">
+        <% if @question.id < @first_question_id + 9 %>
+          <%= link_to questions_path(@question.id + 1) do %>
+            <div class="btn-play"> <%= t('questions.next') %> </div>
+          <% end %>
+        <% else %>
+          <%= link_to results_path do %>
+            <div class="btn-play"> <%= t('questions.next') %> </div>
+          <% end %>
+        <% end %>
+      </div>
+    </div>
   </div>
 </div>

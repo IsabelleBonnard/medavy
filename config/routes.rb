@@ -9,8 +9,10 @@ Rails.application.routes.draw do
     get 'contact' => 'pages#contact'
     get 'history' => 'pages#history'
     get 'quizz' => 'questions#intro'
-    post '/questions/:id' => 'questions#play', as: :questions
-    post 'results' => 'quizz_records#new', as: :results
+    get 'questions/initialization' => 'questions#initialization'
+    get 'questions/incrementation/:id' => 'questions#incrementation'
+    get '/questions/:id' => 'questions#play', as: :questions
+    get 'results' => 'quizz_records#new', as: :results
     post 'quizz_records/create' => 'quizz_records#create'
     get 'gallery' => 'pages#gallery'
     get 'gallery/work' => 'pages#work'

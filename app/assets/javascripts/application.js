@@ -15,8 +15,30 @@
 // alert('Sadly ...');
 
 $(function () {
-
-
+  $('.incorrect').click(function(event) {
+    $(this).addClass('red-border');
+    $('.incorrect').removeClass('incorrect');
+    $('.correct').removeClass('correct');
+    $('.answer').removeClass('hidden');
+  });
+  $('.correct').click(function(event) {
+    $(this).addClass('green-border');
+    $('.incorrect').removeClass('incorrect');
+    $('.correct').removeClass('correct');
+    $('.answer').removeClass('hidden');
+    var question_id = $(this).attr('id');
+    console.log(question_id);
+    $.ajax({
+      type: "GET",
+      url: '/questions/incrementation/' + question_id,
+      success: function(data) {
+        console.log('incrementation ok');
+      },
+      error: function(jqXHR) {
+        console.log('incrementation raté');
+      }
+    });
+  });
 });
 
 

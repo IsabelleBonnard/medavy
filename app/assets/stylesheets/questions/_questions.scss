@@ -1,4 +1,14 @@
 
+.red-border {
+  border: solid 3px red !important;
+  color: red !important;
+}
+
+.green-border {
+  background-color: green !important;
+  color: white !important;
+}
+
 .submit_questions {
   background:none;
   border:none;
@@ -16,6 +26,7 @@
 .card-choices {
   position: relative;
   background-color: white;
+  border: solid 3px white;
   margin: 5px;
   padding: 25px 27px;
   margin-bottom: 30px;

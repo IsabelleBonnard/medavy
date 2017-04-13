@@ -4,11 +4,15 @@
 
 .alert {
   margin: 0;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: solid 3px $dark-gray;
   text-align: center;
-  color: white;
+  color: $dark-gray;
 }
 .alert-info {
-  background: $green;
+  background: $yellow;
 }
 .alert-warning {
   background: $red;

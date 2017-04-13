@@ -2,10 +2,9 @@
   <div class="text-center">
     <h1><%= t('questions.intro') %></h1>
     <p><strong> <%= t('questions.intro_bis') %></strong></p>
-    <%= form_tag(questions_path(@question), method: "post") do %>
-      <input name="start_date" type="hidden" value=<%= DateTime.now %> />
-      <input name="correct" type="hidden" value=<%= 0 %> />
-      <input class="btn-play" name="commit" type="submit" class="submit_questions" value=<%= t('questions.start') %>>
+    <%= link_to questions_path(@question) do %>
+      <div class="btn-play" id="start-quizz"><%= t('questions.start')%>
+      </div>
     <% end %>
   </div>
   <% if @quizz_records.length > 0 %>
