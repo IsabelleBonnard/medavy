@@ -1,0 +1,20 @@
+<div class="container margin-top-height-navbar">
+  <h1><%= t('messages.title') %></h1>
+  <p><%= t('messages.intro') %></p>
+  <div class="message-form">
+    <%= simple_form_for @message do |f| %>
+      <div>
+        <%= f.input :name, placeholder: t('messages.name-placeholder'), label: false %>
+      </div>
+      <div class = "margin-top">
+        <%= f.input :email, placeholder: t('messages.email-placeholder'), label: false %>
+      </div>
+      <div class="margin-top">
+        <%= f.input :content, placeholder: t('messages.content-placeholder'), label: false %>
+      </div>
+      <div class="margin-top margin-bottom">
+        <%= f.submit t('messages.send'), class: "btn-play margin-top" %>
+      </div>
+    <% end %>
+  </div>
+</div>

@@ -6,7 +6,7 @@ Rails.application.routes.draw do
   # mount RailsAdmin::Engine => '/admin', as: 'rails_admin'
   scope '(:locale)', locale: /en/ do
     root to: 'pages#home'
-    get 'contact' => 'pages#contact'
+    resources :messages, only: [:new, :create]
     get 'history' => 'pages#history'
     get 'quizz' => 'questions#intro'
     get 'questions/initialization' => 'questions#initialization'
@@ -20,7 +20,6 @@ Rails.application.routes.draw do
     get 'gallery/exterior' => 'pages#exterior'
     get 'gallery/SkyViews' => 'pages#sky_views'
     get 'gallery/MedavyByNight' => 'pages#medavy_by_night'
-    post 'pages/contact/send_contact_message' => 'pages#send_contact_message'
   end
   ActiveAdmin.routes(self)
 

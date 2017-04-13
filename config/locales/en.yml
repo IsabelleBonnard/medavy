@@ -74,5 +74,20 @@ en:
     name: "Your name"
     next: "Ok"
 
+  messages:
+    title: "Contact form"
+    intro: "Please complete the form and press 'Send'. We will get back at yo as soon as possible"
+    name-placeholder: "Your name"
+    email-placeholder: "Your email"
+    content-placeholder: "Your message"
+    send: "Send"
+    notification: "Your message has been sent ! Medavy team will respond you as soon as possible!"
+    subject: "MEDAVY's website : %{name} sent you a message"
+    intro_mail: "%{name} sent you the following message from Medavy's website:"
+    link: "Press this button to access admin interface"
+    signature: "Medavy's Team"
+    email : "Contact email: "
+    Access: "Acess"
+
 
 

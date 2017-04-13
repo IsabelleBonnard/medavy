@@ -1,0 +1,13 @@
+<p> <%= t('messages.intro_mail_html', name: @name) %> </p>
+
+<p style="color: gray; border: 1px solid gray; padding: 15px 10px;"><%= @content %></p>
+
+<p> <%= t('messages.email') %> <strong> <%= @email %> </strong></p>
+
+<p> <%= t('messages.link') %> </p>
+
+<%= link_to root_url, style: "text-decoration: none;" do %>
+ <button style="background-color: #F8E386 ; border-radius: 5px; color: #777777; font-size: 16px;">
+   <%= t('messages.access')%>
+ </button>
+<% end %>

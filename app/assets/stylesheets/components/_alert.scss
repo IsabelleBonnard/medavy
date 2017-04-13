@@ -7,12 +7,12 @@
   border-top: none;
   border-left: none;
   border-right: none;
-  border-bottom: solid 3px $dark-gray;
+  border-bottom: none;
   text-align: center;
   color: $dark-gray;
 }
 .alert-info {
-  background: $yellow;
+  background: $white;
 }
 .alert-warning {
   background: $red;

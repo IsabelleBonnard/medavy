@@ -73,3 +73,18 @@ fr:
     date: "Date"
     submit: "Enregistrer"
     next: "OK"
+
+  messages:
+    title: "Formulaire de contact"
+    intro: "Merci de bien vouloir compléter les champs et cliquer sur 'Envoyer'. Nous vous répondrons dès que possible !"
+    name-placeholder: "Votre nom"
+    email-placeholder: "Votre email"
+    content-placeholder: "Votre message"
+    send: "Envoyer"
+    notification: "Votre message a bien été envoyé, l'équipe de Médavy vous répondra dès que possible!"
+    subject: "Site internet de MEDAVY : %{name} vous a écrit un message"
+    intro_mail_html: "<strong>%{name}</strong> vous a écrit le message suivant à partir du site internet de Médavy :"
+    link: "Cliquer ici pour accéder à l'interface d'administration des messages"
+    signature: "L'équipe Medavy"
+    email : "Email de contact : "
+    Access: "Accéder"
