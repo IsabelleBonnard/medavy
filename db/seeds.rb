@@ -11,6 +11,8 @@ csv = CSV.parse(csv_text, csv_options)
 csv.each do |row|
  question = Question.new(intitule: row['Intitule'], answer: row['Answer'])
  question.save
+ question.id % 10 == 0 ? question.beautiful_id = 10 : question.beautiful_id = question.id % 10
+ question.save
  choice_1 = Choice.new(intitule: row['Choice 1'], correct: true)
  choice_1.question = question
  choice_1.save
