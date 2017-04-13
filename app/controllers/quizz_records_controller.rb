@@ -1,7 +1,7 @@
 class QuizzRecordsController < ApplicationController
   skip_before_action :authenticate_user!
   def new
-    @quizz_records = QuizzRecord.all
+    @quizz_records = QuizzRecord.all.sort_by { |quizz_record| -quizz_record.score }
     @quizz_record = QuizzRecord.new
     @quizz_record.length = (DateTime.now - session[:start_date].to_datetime)*24*60
     @quizz_record.correct = session[:question_1] + session[:question_2] + session[:question_3] + session[:question_4] + session[:question_5] + session[:question_6] + session[:question_7] + session[:question_8] + session[:question_9] + session[:question_10]

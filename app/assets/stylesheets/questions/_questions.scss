@@ -116,6 +116,10 @@
   padding-top: 20px;
 }
 
+.btn-save {
+  display: inline !important;
+}
+
 // smartphones (xs)
 
 @media (max-width: $screen-sm-min) {
@@ -156,6 +160,8 @@
 
   .btn-play {
     width: 100px;
+    display:block;
+    margin:0 auto;
   }
 
 }
@@ -182,7 +188,10 @@
   }
   .btn-play {
     width: 100px;
+    display:block;
+    margin:0 auto;
   }
+
 }
 
 // large laptops (lg and xl)
@@ -208,6 +217,8 @@
 
   .btn-play {
     width: 100px;
+    display:block;
+    margin:0 auto;
   }
 }
 

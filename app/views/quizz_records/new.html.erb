@@ -11,7 +11,7 @@
     <%= f.hidden_field :correct, value: @quizz_record.correct %>
     <%= f.hidden_field :score, value: @quizz_record.score %>
     <%= f.hidden_field :date, value: @quizz_record.date %>
-    <%= f.submit t('questions.submit'), class: "btn-play" %>
+    <%= f.submit t('questions.submit'), class: "btn-play btn-save" %>
   <% end %>
   <%= render 'shared/results', :locals => {@quizz_records => @quizz_records} %>
 </div>
