@@ -5,7 +5,7 @@ class PagesController < ApplicationController
   skip_before_action :authenticate_user!, only: [:home, :about, :history, :gallery, :exterior, :interiors, :medavy_by_night, :sky_views, :work, :send_contact_message]
 
   def home
-    @hash_position = [{:lat=>17.4015693, :lng=>78.5199399}]
+    @hash_position = [{:lat=>48.6785688, :lng=>0.09740069999998013}]
     # formule pour ajouter un marquer personlisé
     # [{:lat=>17.4015693, :lng=>78.5199399, :picture=>{:url=>"/assets/custom_marker-a56fb984f2a4979b7f681ba7e0b59f1562cea1810f8089729323a1cfb7cb532e.png", :width=>32, :height=>32}}]
   end
