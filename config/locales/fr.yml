@@ -24,6 +24,13 @@ fr:
     have_fun: "Participer à notre jeu"
     questions: "Questions"
     contact: "Contactez-nous"
+    go: "Itinéraire"
+    open1_html: "En 2017, le château de Médavy et son parc vous accueillent <strong>tous les jours du samedi 1er juillet au dimanche 3 septembre de 13h à 19h.</strong>"
+    open2_html: "Le site sera aussi ouvert à la visite pour les journées du patrimoine: <strong>les 16 et 17 septembre </strong>(de 13h à 19h)."
+    open3_html: "Le parc, la chapelle et le colombier sont en visite libre."
+    open4_html: "La visite du château est guidée et dure environ 1 heure. La taille des groupes est limitée à 20 personnes maximum (enfants compris) et la dernière visite commence à 17h45."
+    open5_html: "Sur rendez-vous pris au moins 24 heures à l’avance et en dehors des journées du patrimoine, la tour Saint Pierre qui abrite des œuvres d’art contemporain du XXIème siècle pourra aussi faire l’objet d’une visite guidée pour un groupe d’au moins cinq et d’au maximum dix adultes (enfants non admis). La visite dure entre 30 et 45 minutes et nécessite une forme physique correcte (escaliers)."
+
 
   history:
     title: "Histoire du Château de Médavy"

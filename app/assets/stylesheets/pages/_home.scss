@@ -9,8 +9,35 @@
   padding-bottom: 0;
 }
 
+.btn-go {
+  color: $light-gray !important;
+  text-decoration: none !important;
+  background-color: $white;
+  padding: 10px 10px 10px 10px;
+  margin: 10px 0px;
+  opacity: 0.9;
+  // line-height: 20px;
+  // height: 20px;
+  font-size: 14px;
+  display: block;
+  i {
+    color: $yellow;
+    padding-right: 10px;
+  }
+}
+
+p > strong {
+  color: black;
+  font-weight: bolder;
+}
+
+.btn-go:hover {
+  opacity: 1;
+}
+
 .pages-home .wrapper-home {
   padding-bottom: 100px;
+  padding-top: 100px;
 }
 
 .pages-home .wrapper-white{

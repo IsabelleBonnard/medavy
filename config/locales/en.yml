@@ -24,6 +24,13 @@ en:
     have_fun: "Play"
     questions: "Questions"
     contact: "Contact us"
+    go: "Directions"
+    open1_html: "In 2017, the Château de Médavy and its park welcome you <black>every day from July 1rst to September 3rd, from 1pm to 7pm.</black>"
+    open2_html: "The site is also open one extra week-end (Journées du Patrimoine): <strong>September 16 and 17</strong> (1pm to 7pm)."
+    open3_html: "The visit of the park, the chapel and the dovecote is non-guided."
+    open4_html: "The visit of the castle is guided and lasts 1 hour. Groups are limited to 20 people maximum (children included) and the last visit begins at 5.45 pm."
+    open5_html: "Saint Pierre Tower is also open for a guided tour upon prior appointment (at least 24 hours before the visit, and not during the “Journées du Patrimoine”) for a group of 5 adults minimum and 10 adults maximum (no children). This visit lasts between 30 and 45 minutes and requires a good heath condition (many stairs). The tower hosts a collection of XXIrst century contemporary art pieces."
+
 
   history:
     title: "History of Medavy Castle"
