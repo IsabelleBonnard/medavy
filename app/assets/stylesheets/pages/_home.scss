@@ -27,9 +27,31 @@
 }
 
 p > strong {
-  color: black;
   font-weight: bolder;
+  color: #666;
 }
+
+.intro-text > p {
+  color: $dark-gray;
+}
+
+.visit-type {
+  // background-color: white;
+  border-bottom: solid 1px $dark-gray;
+  padding: 5px;
+  text-align: center;
+  margin-bottom: 5px;
+  height: 82px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+.details-box {
+  // background-color: white;
+  padding: 5px;
+}
+
 
 .btn-go:hover {
   opacity: 1;
