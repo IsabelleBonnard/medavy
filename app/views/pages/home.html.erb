@@ -8,8 +8,8 @@
 <div class="wrapper wrapper-home">
   <div class="container narrow">
     <!-- map -->
-    <div class="row">
-      <div class="col-xs-12 col-sm-6">
+    <div class="map-box">
+      <div class="map-left">
         <h2 class="title text-center"> <%= t('root.welcome') %></h2>
         <div class="intro-text">
           <p><%= t('root.open0_html') %></p>
@@ -17,7 +17,7 @@
           <p><%= t('root.open2_html') %></p>
         </div>
       </div>
-      <div class="col-xs-12 col-sm-6">
+      <div class="map-right">
         <div id="map">
         </div>
         <div class = "text-center">
@@ -33,12 +33,14 @@
     <!-- visits -->
     <div class="row">
       <h2 class="title text-center"> <%= t('root.visits') %></h2>
+      <!-- park -->
       <div class="col-xs-12 col-sm-4">
-        <div class="visit-type">
-          <h3><%= t('root.park') %></h3>
+        <div class="image-visits" id="image-park" style="background-image: linear-gradient(-0deg, rgba(0, 0, 0, 0.5) 0%, rgba(39, 222, 241, 0.2) 62%), url('<%= image_path "Medavy 88.JPG" %>'); background-size: cover;">
+          <div class="banner-content visits-content">
+            <h3> <%= t('root.park')%> </h3>
+          </div>
         </div>
-        <div class="details-box">
-          <%= image_tag("Medavy 88.JPG", class: "image-pages")  %>
+        <div class="details-box" id="details-box-park">
           <p class="margin-top"><%= t('root.park_description') %></p>
           <ul>
             <li> <%= t('root.non-guided') %> </li>
@@ -46,12 +48,15 @@
           </ul>
         </div>
       </div>
+      <!-- castle -->
       <div class="col-xs-12 col-sm-4">
-        <div class="visit-type"><h3><%= t('root.castle') %></h3>
+        <div class="image-visits" id="image-castle" style="background-image: linear-gradient(-0deg, rgba(0, 0, 0, 0.5) 0%, rgba(39, 222, 241, 0.2) 62%), url('<%= image_path "Medavy 329.JPG" %>'); background-size: cover;">
+          <div class="banner-content visits-content">
+            <h3> <%= t('root.castle')%> </h3>
+          </div>
         </div>
-        <div class="details-box">
-          <%= image_tag("Medavy 329.JPG", class: "image-pages")  %>
-          <p class="margin-top"> <%= t('root.castle_description') %></p>
+        <div class="details-box" id="details-box-castle">
+          <p class="margin-top"><%= t('root.castle_description') %></p>
           <ul>
             <li> <%= t('root.guided') %> </li>
             <li> <%= t('root.length_castle') %> </li>
@@ -61,12 +66,15 @@
           </ul>
         </div>
       </div>
+      <!-- tour -->
       <div class="col-xs-12 col-sm-4">
-        <div class="visit-type"><h3> <%= t('root.peter_tour') %></h3>
+        <div class="image-visits" id="image-peter" style="background-image: linear-gradient(-0deg, rgba(0, 0, 0, 0.5) 0%, rgba(39, 222, 241, 0.2) 62%), url('<%= image_path "Medavy 117.JPG" %>'); background-size: cover;">
+          <div class="banner-content visits-content">
+            <h3> <%= t('root.peter_tour')%> </h3>
+          </div>
         </div>
-        <%= image_tag("Medavy 117.JPG", class: "image-pages")  %>
-        <p class="margin-top"> <%= t('root.peter_description') %> </p>
-        <div class="details-box">
+        <div class="details-box" id="details-box-peter">
+          <p class="margin-top"><%= t('root.peter_description') %></p>
           <ul>
             <li> <%= t('root.guided') %> </li>
             <li> <%= t('root.rdv_peter') %> </li>
