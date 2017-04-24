@@ -1,10 +1,10 @@
 /* Main class */
 .navbar-wagon {
   box-shadow: 0 1px 5px 0 rgba(0,0,0,0.07),0 1px 0 0 rgba(0,0,0,0.03);
-  background: $black;
+  background: $white;
   transition: all 0.3s ease;
   display: flex;
-  height: 90px;
+  height: 30px;
   padding: 0px 30px;
   align-items: center;
   justify-content: space-between;
@@ -21,13 +21,13 @@
 
 // liseret jaune
 .liseret-fixed {
-  background: $yellow;
+  background: $green;
   height: 5px;
   z-index: 101;
   width: 100%;
   position: fixed;
   left: 0px;
-  top: 90px;
+  top: 30px;
 }
 
 /* Optional class to fix the navbar on top */
@@ -138,3 +138,22 @@
   border-left: 1px solid #E6E6E6;
   border-top: 1px solid #E6E6E6;
 }
+
+// logo
+
+.logo-text {
+  color: $green !important;
+}
+
+.flex {
+  display: flex;
+}
+
+.logo-text-1 {
+  color: $green;
+}
+
+.logo-text-2 {
+  color: $green;
+}
+

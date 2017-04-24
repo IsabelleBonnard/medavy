@@ -53,7 +53,7 @@
  }
 
 .card-choices i{
-  color: $yellow;
+  color: $green;
   font-size: 60px;
 }
 
@@ -69,12 +69,12 @@
   th {
     color: $dark-gray;
     padding: 5px !important;
-    border-bottom: solid 3px $yellow;
+    border-bottom: solid 3px $green;
   }
   td {
     color: $light-gray;
     padding: 5px !important;
-    border-bottom: solid 3px $yellow;
+    border-bottom: solid 3px $green;
   }
 }
 
@@ -124,10 +124,10 @@
 
 @media (max-width: $screen-sm-min) {
   body {
-    font-size: 10px !important;
+    font-size: 10px;
   }
   h1 {
-    font-size: 30px !important;
+    font-size: 30px;
   }
   .card-choices {
     padding: 5px 5px;
@@ -142,10 +142,10 @@
 @media (min-width: $screen-sm-min) and (max-width: $screen-md-min) {
   // Tailles de polices
   body {
-    font-size: 12px !important;
+    font-size: 12px;
   }
   h1 {
-    font-size: 35px !important;
+    font-size: 35px;
   }
   .card-choices {
      padding: 15px 15px;
@@ -171,10 +171,10 @@
 @media (min-width: $screen-md-min) and (max-width: $screen-lg-min) {
   // Tailles de polices
   body {
-    font-size: 14px !important;
+    font-size: 14px;
   }
   h1 {
-    font-size: 40px !important;
+    font-size: 40px;
   }
   .card-choices {
      padding: 25px 27px;
@@ -202,7 +202,7 @@
     font-size: 16px !important;
   }
   h1 {
-    font-size: 40px !important;
+    font-size: 40px;
   }
   .card-choices {
      padding: 25px 27px;

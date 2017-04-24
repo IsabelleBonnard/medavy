@@ -9,13 +9,30 @@
   padding-bottom: 0;
 }
 
+.wrapper {
+  min-height: calc(100vh - 100px);
+  background-color: $white;
+  position: relative;
+  /* Equal to height of footer */
+  /* But also accounting for potential margin-bottom of last child */
+}
 
-
+.wrapper-home {
+  h2 {
+    color: $green;
+  }
+  p {
+    color: $gray;
+  }
+  li {
+    color: $gray !important;
+  }
+}
 
 .btn-go {
-  color: $light-gray !important;
+  color: $white;
   text-decoration: none !important;
-  background-color: $white;
+  background-color: $green;
   padding: 10px 10px 10px 10px;
   margin: 10px 0px;
   opacity: 0.9;
@@ -24,9 +41,10 @@
   font-size: 14px;
   display: block;
   i {
-    color: $yellow;
+    color: $white;
     padding-right: 10px;
   }
+  // border: solid 1px $green;
 }
 
 p > strong {
@@ -59,12 +77,6 @@ p > strong {
 .image-visits {
   height: 50vh;
   padding-top: 20vh;
-}
-
-
-.banner-content {
-  color: white;
-  text-align: center;
 }
 
 .visits-content {

@@ -5,7 +5,7 @@ div {
 
 .card-home {
   position: relative;
-  background-color: white;
+  background-color: $green;
   height: 235px;
   margin: 5px;
   padding: 25px 27px;
@@ -15,17 +15,17 @@ div {
 
  .card-home h4 {
   font-size: 30px;
-  color: $dark-gray;
+  color: $white;
 
  }
 
  .card-home p {
   font-size: 14px;
-  color: $light-gray;
+  color: $dark-gray;
  }
 
 .card-home i{
-  color: $yellow;
+  color: $white;
   font-size: 60px;
 }
 

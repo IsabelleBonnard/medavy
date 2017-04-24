@@ -37,9 +37,10 @@
     <meta itemprop="image" content="<%= image_url(meta_image) %>">
   </head>
   <body class="<%= "#{controller_path}-#{action_name}" %>">
-   <div class="wrapper">
+    <div class="wrapper">
       <% if action_name == "play" ||  controller_name == "quizz_records" %>
         <%= render 'shared/navbar_without_i18n' %>
+      <% elsif action_name == "home" %>
       <% else %>
         <%= render 'shared/navbar' %>
       <% end %>
