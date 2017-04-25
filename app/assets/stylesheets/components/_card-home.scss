@@ -21,7 +21,8 @@ div {
 
  .card-home p {
   font-size: 14px;
-  color: $dark-gray;
+  color: $white !important;
+  opacity: 0.8;
  }
 
 .card-home i{
