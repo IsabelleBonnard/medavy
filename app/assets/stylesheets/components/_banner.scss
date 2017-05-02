@@ -15,17 +15,26 @@
       display: flex;
       // width: 650px;
       p {
-        font-size: 30px;
+        font-size: 20px;
       }
       h1 {
-        font-size: 40px;
+        font-size: 30px;
       }
     }
     .logo-text-1 {
-      margin-top: 20px;
+      margin-top: 25px;
     }
     .logo-subtitle {
-      font-size: 15px;
+      font-size: 13px;
+    }
+    .banner {
+      height: 50vh;
+    }
+    .banner-text {
+      display: table;
+      margin: 0 auto;
+      padding-top: 30vh;
+      width: 50vw;
     }
   }
 
@@ -49,6 +58,12 @@
     .logo-subtitle {
       font-size: 20px;
     }
+    .banner-text {
+      display: table;
+      margin: 0 auto;
+      padding-top: 70vh;
+      width: 50vw;
+    }
   }
 
   // small laptop (md)
@@ -70,6 +85,12 @@
     }
     .logo-subtitle {
       font-size: 25px;
+    }
+    .banner-text {
+      display: table;
+      margin: 0 auto;
+      padding-top: 70vh;
+      width: 50vw;
     }
   }
 
@@ -94,15 +115,15 @@
     .logo-subtitle {
       font-size: 25px;
     }
+
+    .banner-text {
+      display: table;
+      margin: 0 auto;
+      padding-top: 70vh;
+      width: 50vw;
+    }
   }
 
-
-.banner-text {
-  display: table;
-  margin: 0 auto;
-  padding-top: 70vh;
-  width: 50vw;
-}
 
 .logo-text {
   width: 70vw !important;
