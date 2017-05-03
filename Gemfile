@@ -10,8 +10,7 @@ gem 'jbuilder', '~> 2.0'
 gem 'devise'
 gem 'redis'
 
-
-
+gem 'swipebox'
 
 # admin view
 gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin.git'
