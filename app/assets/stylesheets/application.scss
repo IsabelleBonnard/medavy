@@ -5,6 +5,7 @@
 // External libraries
 @import "bootstrap-sprockets";
 @import "bootstrap";
+@import "src/css/swipebox.css";
 @import "font-awesome-sprockets";
 @import "font-awesome";
 @import 'foundation-icons';
@@ -17,3 +18,4 @@
 @import "video/index";
 @import "questions/index";
 @import "messages/index";
+

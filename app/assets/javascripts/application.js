@@ -1,5 +1,6 @@
 //= require jquery
 //= require jquery_ujs
+//= require src/js/jquery.swipebox.js
 //= require bootstrap-sprockets
 //= require moment
 //= require moment/fr
@@ -9,6 +10,8 @@
 //= require typed
 //= require clipboard
 //= require data-confirm-modal
+
+
 //= require_tree ./vendor/
 //= require_tree .
 
@@ -86,6 +89,7 @@ $(function () {
       $('#li-recent').addClass('menu-active');
     }
   });
+  $( '.swipebox' ).swipebox();
 });
 
 
