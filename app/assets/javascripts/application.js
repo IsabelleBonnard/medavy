@@ -39,6 +39,15 @@ $(function () {
       }
     });
   });
+  $('#image-park').click(function(event) {
+    $('#details-box-park').toggleClass('hidden');
+  });
+  $('#image-castle').click(function(event) {
+    $('#details-box-castle').toggleClass('hidden');
+  });
+  $('#image-peter').click(function(event) {
+    $('#details-box-peter').toggleClass('hidden');
+  });
 });
 
 

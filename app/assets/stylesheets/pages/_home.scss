@@ -24,7 +24,7 @@
     color: $gray;
   }
   li {
-    color: $gray !important;
+    color: $gray;
   }
 }
 
@@ -71,6 +71,16 @@ p > strong {
 .details-box {
   // background-color: white;
   padding: 5px;
+  li {
+    list-style-type: circle;
+  }
+}
+
+.visits-all {
+  background-color: $white;
+  box-shadow: 1px 1px 1px $green;
+  padding: 1em;
+  margin-bottom: 1em;
 }
 
 .image-visits {
@@ -145,7 +155,6 @@ p > strong {
     padding-top: 0px;
   }
   .pages-home .wrapper-home {
-    padding-bottom: 20px;
     padding-top: 20px;
   }
 }
@@ -156,7 +165,6 @@ p > strong {
     padding-top: 20px;
   }
   .pages-home .wrapper-home {
-    padding-bottom: 100px;
     padding-top: 20px;
   }
   .home-form {
