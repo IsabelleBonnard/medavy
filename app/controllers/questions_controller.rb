@@ -18,7 +18,7 @@ class QuestionsController < ApplicationController
 
   def play
     @question = Question.find(params[:id])
-    if @question.id == 1
+    if @question.id == Question.first.id
       session[:start_date] = DateTime.now
     end
     @choices = @question.choices.shuffle

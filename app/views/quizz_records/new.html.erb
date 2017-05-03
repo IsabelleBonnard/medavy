@@ -1,17 +1,19 @@
 <div class="container margin-top-height-navbar">
-  <h1><%= t('questions.congratulations') %></h1>
-  <div class="result-card">
-    <p><%= t('questions.length') %> : <%= @quizz_record.length.round(2) %> min</p>
-    <p><%= t('questions.correct') %> : <%= @quizz_record.correct %> / 10</p>
-    <p><%= t('questions.score') %> : <%= @quizz_record.score.round(2) %></p>
+  <div class="quizz_records">
+    <h1><%= t('questions.congratulations') %></h1>
+    <div class="result-card">
+      <p><strong> <%= t('questions.length') %> :</strong> <%= @quizz_record.length.round(2) %> min</p>
+      <p><strong> <%= t('questions.correct') %> :</strong> <%= @quizz_record.correct %> / 10</p>
+      <p><strong> <%= t('questions.score') %> : </strong><%= @quizz_record.score.round(2) %></p>
+    </div>
+    <%= form_for(@quizz_record, url: quizz_records_create_path) do |f| %>
+      <%= f.text_field :username, placeholder: t('questions.name'), class: "field-name" %>
+      <%= f.hidden_field :length, value: @quizz_record.length %>
+      <%= f.hidden_field :correct, value: @quizz_record.correct %>
+      <%= f.hidden_field :score, value: @quizz_record.score %>
+      <%= f.hidden_field :date, value: @quizz_record.date %>
+      <%= f.submit t('questions.submit'), class: "btn-play btn-save" %>
+    <% end %>
   </div>
-  <%= form_for(@quizz_record, url: quizz_records_create_path) do |f| %>
-    <%= f.text_field :username, placeholder: t('questions.name'), class: "field-name" %>
-    <%= f.hidden_field :length, value: @quizz_record.length %>
-    <%= f.hidden_field :correct, value: @quizz_record.correct %>
-    <%= f.hidden_field :score, value: @quizz_record.score %>
-    <%= f.hidden_field :date, value: @quizz_record.date %>
-    <%= f.submit t('questions.submit'), class: "btn-play btn-save" %>
-  <% end %>
   <%= render 'shared/results', :locals => {@quizz_records => @quizz_records} %>
 </div>

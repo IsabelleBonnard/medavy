@@ -1,3 +1,8 @@
+.play, .quizz-intro, .quizz_records {
+  h1 {
+    color: $green;
+  }
+}
 
 .red-border {
   border: solid 3px red !important;
@@ -5,8 +10,10 @@
 }
 
 .green-border {
-  background-color: green !important;
+  background-color: $green !important;
+  border-color: $green !important;
   color: white !important;
+  opacity: 1 !important;
 }
 
 .answer {
@@ -31,7 +38,7 @@
 .card-choices {
   position: relative;
   background-color: white;
-  border: solid 3px white;
+  border: solid 3px $light-gray;
   margin: 5px;
   opacity: 0.9;
   height: 100%;
@@ -79,9 +86,8 @@
 }
 
 .btn-play {
-  background-color: $white;
-  border: solid 1px $dark-gray;
-  color: $dark-gray;
+  background-color: $green;
+  color: $white;
   opacity: 0.9;
   border-radius: 5px;
   padding: 5px;
@@ -91,10 +97,6 @@
 }
 
 .btn-play:hover {
-  background-color: $white;
-  border-color: solid 1px $light-gray;
-  border-radius: 5px;
-  color: $dark-gray;
   opacity: 1;
 }
 
@@ -102,7 +104,7 @@
 
 .field-name {
   color: $dark-gray;
-  border: solid 1px $dark-gray;
+  border: solid 1px $green;
   border-radius: 5px;
   padding: 5px;
 }
@@ -111,6 +113,9 @@
   outline:0;
 }
 
+.results_table {
+  margin-top: 30px;
+}
 
 .result-card {
   padding-top: 20px;
@@ -118,6 +123,8 @@
 
 .btn-save {
   display: inline !important;
+  border: solid 1px $green;
+  margin-left: 20px !important;
 }
 
 // smartphones (xs)

@@ -1,11 +1,13 @@
 <div class="container margin-top-height-navbar">
-  <div class="text-center">
-    <h1><%= t('questions.intro') %></h1>
-    <p><strong> <%= t('questions.intro_bis') %></strong></p>
-    <%= link_to questions_path(@question) do %>
-      <div class="btn-play" id="start-quizz"><%= t('questions.start')%>
-      </div>
-    <% end %>
+  <div class="quizz-intro">
+    <div class="text-center">
+      <h1><%= t('questions.intro') %></h1>
+      <p><strong> <%= t('questions.intro_bis') %></strong></p>
+      <%= link_to questions_path(@question) do %>
+        <div class="btn-play" id="start-quizz"><%= t('questions.start')%>
+        </div>
+      <% end %>
+    </div>
   </div>
   <% if @quizz_records.length > 0 %>
     <%= render 'shared/results', :locals => {@quizz_records => @quizz_records} %>
