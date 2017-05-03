@@ -6,41 +6,41 @@
         <div class="timeline">
           <div class = "timeline-title"><%= t('history.timeline_title')%></div>
           <ul>
-            <li id="li-origins"><strong><%= t('history.origins_date')%></strong> - <%= t('history.origins') %></li>
-            <li id="li-rouxel"><strong><%= t('history.rouxel_date')%></strong> - <%= t('history.rouxel') %></li>
-            <li id="li-montregard"><strong><%= t('history.montregard_date')%></strong> - <%= t('history.montregard') %></li>
-            <li id="li-laroque"><strong><%= t('history.laroque_date')%></strong> - <%= t('history.laroque') %></li>
-            <li id="li-recent"><strong><%= t('history.recent_date')%></strong> - <%= t('history.recent') %></li>
+            <li id="li-origins" class="menu-active"><strong><%= t('history.origins_date')%></strong> - <%= t('history.origins') %></li>
+            <li id="li-rouxel" class="menu-inactive"><strong><%= t('history.rouxel_date')%></strong> - <%= t('history.rouxel') %></li>
+            <li id="li-montregard" class="menu-inactive"><strong><%= t('history.montregard_date')%></strong> - <%= t('history.montregard') %></li>
+            <li id="li-laroque" class="menu-inactive"><strong><%= t('history.laroque_date')%></strong> - <%= t('history.laroque') %></li>
+            <li id="li-recent" class="menu-inactive"><strong><%= t('history.recent_date')%></strong> - <%= t('history.recent') %></li>
           </ul>
         </div>
       </div>
       <div class="col-xs-12 col-sm-8">
         <h1 class = "large-margin-bottom large-margin-top green-font"><%= t('history.title') %></h1>
-        <div class="card-pages">
+        <div class="card-pages" id="card-origins">
           <h4> <%= t('history.origins') %></h4>
           <div class = "subtitle"><%= t('history.origins_subtitle') %></div>
           <%= image_tag("logo.png", class: "image-pages")  %>
           <p class="margin-top"><%= t('history.origins_paragraph_html') %></p>
         </div>
-        <div class="card-pages">
+        <div class="card-pages" id="card-rouxel">
           <h4> <%= t('history.rouxel') %></h4>
           <div class = "subtitle"><%= t('history.rouxel_subtitle') %></div>
           <%= image_tag("Medavy 72.JPG", class: "image-pages")  %>
           <p class="margin-top"><%= t('history.rouxel_paragraph_html') %></p>
         </div>
-        <div class="card-pages">
+        <div class="card-pages" id="card-montregard">
           <h4> <%= t('history.montregard') %></h4>
           <div class = "subtitle"><%= t('history.montregard_subtitle') %></div>
           <%= image_tag("Medavy 57.JPG", class: "image-pages")  %>
           <p class="margin-top"><%= t('history.montregard_paragraph_html') %></p>
         </div>
-        <div class="card-pages">
+        <div class="card-pages" id="card-laroque">
           <h4> <%= t('history.laroque') %></h4>
           <div class = "subtitle"><%= t('history.laroque_subtitle') %></div>
           <%= image_tag("Medavy 134.JPG", class: "image-pages")  %>
           <p class="margin-top"><%= t('history.laroque_paragraph_html') %></p>
         </div>
-        <div class="card-pages">
+        <div class="card-pages" id="card-recent">
           <h4> <%= t('history.recent') %></h4>
           <div class = "subtitle"><%= t('history.recent_subtitle') %></div>
           <%= image_tag("Medavy 329.JPG", class: "image-pages")  %>

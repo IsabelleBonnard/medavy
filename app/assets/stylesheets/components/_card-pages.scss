@@ -132,6 +132,13 @@ div {
   width: 20%;
 }
 
+.menu-inactive {
+  color: $light-gray;
+}
+
+.menu-active {
+  color: $green;
+}
 
 @media (max-width: $screen-sm-min) {
     // masquer le sommaire pour les smartphones
