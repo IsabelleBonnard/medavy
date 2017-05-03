@@ -55,6 +55,17 @@ p > strong {
   color: $dark-gray;
 }
 
+.opening-hours {
+  padding: 1em;
+  margin-top: 1em;
+  border: solid 3px $light-green;
+  box-shadow: 1px 1px 1px $green;
+  h4 {
+    text-align: center;
+    color: $green;
+  }
+}
+
 .visit-type {
   // background-color: white;
   // border-bottom: solid 1px $dark-gray;

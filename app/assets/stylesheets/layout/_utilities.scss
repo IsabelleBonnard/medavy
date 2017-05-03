@@ -100,6 +100,9 @@ no-padding {
 .bg-light-green {
   background: $light-green !important;
 }
+.bg-transparent {
+  background: rgba(255,0,0,0) !important;
+}
 
 .top-z-index {
    z-index: 1000000;

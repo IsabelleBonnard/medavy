@@ -1,0 +1,26 @@
+<div class="navbar-wagon navbar-wagon-fixed bg-transparent">
+  <!-- left -->
+  <div class="navbar-wagon-left">
+  </div>
+
+  <!-- Logo -->
+  <div class="text-center center-button">
+  </div>
+
+  <!-- Right Navigation -->
+  <div class="navbar-wagon-right">
+    <!-- Language choice -->
+    <div>
+      <%= link_to locale: nil do %>
+        <%= image_tag("France_flag.png", class: "flag")  %>
+      <% end %>
+    </div>
+    <div>
+      <%= link_to locale: 'en' do %>
+        <%= image_tag("union jack.png", class: "flag") %>
+      <% end %>
+    </div>
+
+  </div>
+</div>
+

@@ -41,6 +41,7 @@
       <% if action_name == "play" ||  controller_name == "quizz_records" %>
         <%= render 'shared/navbar_without_i18n' %>
       <% elsif action_name == "home" %>
+        <%= render 'shared/navbar_transparent' %>
       <% else %>
         <%= render 'shared/navbar' %>
       <% end %>
