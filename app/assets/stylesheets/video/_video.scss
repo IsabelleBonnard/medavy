@@ -1,10 +1,9 @@
 // Image gallery background : video si tablette ou laptop
 
 #video-background {
-  min-width: 100%;
-  min-height: 100%;
+  width: 100vw;
   z-index: 3;
-  position: absolute;
+  // position: absolute;
 }
 
 @media (max-width: $screen-sm-min) {
@@ -19,7 +18,7 @@
   width: 100%;
   min-height: 100%;
   z-index: 3;
-  position: absolute;
+  // position: absolute;
 }
 
 @media (min-width: $screen-sm-min) {
@@ -34,7 +33,7 @@
   position: absolute;
   z-index: 4;
   width: 100% !important;
-  bottom: 10px;
+  bottom: 90px;
 }
 
 @media (max-width: $screen-sm-min) {

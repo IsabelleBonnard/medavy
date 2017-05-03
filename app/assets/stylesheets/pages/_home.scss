@@ -9,7 +9,7 @@
 }
 
 .wrapper {
-  min-height: calc(100vh - 100px);
+  // min-height: calc(100vh - 30px);
   background-color: $white;
   position: relative;
   /* Equal to height of footer */
@@ -92,7 +92,7 @@ p > strong {
   background-color: $white;
   box-shadow: 1px 1px 1px $green;
   padding: 1em;
-  margin-bottom: 1em;
+  margin-bottom: 3em;
 }
 
 .image-visits {
