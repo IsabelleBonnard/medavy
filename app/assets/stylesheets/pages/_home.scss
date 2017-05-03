@@ -1,6 +1,5 @@
 
 .title {
-  padding-top: 20px;
   padding-bottom: 20px;
 }
 
@@ -82,17 +81,12 @@ p > strong {
 .visits-content {
   color: white;
   font-size: 20px;
-  padding: 10vh 10px 10px 10px;
+  padding: 13vh 10px 10px 10px;
   text-align: center;
 }
 
 .btn-go:hover {
   opacity: 1;
-}
-
-.pages-home .wrapper-home {
-  padding-bottom: 100px;
-  padding-top: 20px;
 }
 
 .pages-home .wrapper-white{
@@ -147,10 +141,24 @@ p > strong {
     justify-content: center;
     margin-bottom: 10px;
   }
+  .title {
+    padding-top: 0px;
+  }
+  .pages-home .wrapper-home {
+    padding-bottom: 20px;
+    padding-top: 20px;
+  }
 }
 
 // tablets, small, large and extra-large laptops (sm, md, lg, xl)
 @media (min-width: $screen-sm-min) {
+  .title {
+    padding-top: 20px;
+  }
+  .pages-home .wrapper-home {
+    padding-bottom: 100px;
+    padding-top: 20px;
+  }
   .home-form {
     display: flex;
     align-items: center;
@@ -165,11 +173,11 @@ p > strong {
   .map-box {
     display: flex;
     justify-content: space-around;
-    align-items: center;
+    // align-items: center;
   }
   .map-right {
    flex: 0 0 50%;
-    padding: 1em;
+    // padding: 1em;
   }
   .map-left {
    flex: 0 0 50%;

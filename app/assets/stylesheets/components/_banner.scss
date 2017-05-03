@@ -1,7 +1,7 @@
 .banner {
  /* if you have a 70px navbar => height: calc(100vh - 70px); */
  background-size: cover !important;
- background-position: 90% 0%;
+ background-position: 78% 0%;
  height: 100vh;
 }
 
@@ -18,11 +18,13 @@
         font-size: 20px;
       }
       h1 {
-        font-size: 30px;
+        font-size: 64px;
+        text-align: center;
       }
     }
     .logo-text-1 {
       margin-top: 25px;
+      display: none;
     }
     .logo-text-2 {
       text-shadow: 1px 1px $white;
