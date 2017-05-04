@@ -11,6 +11,10 @@ gem 'devise'
 gem 'redis'
 
 gem 'swipebox'
+group :production do
+  gem 'rails_12factor'
+end
+
 
 # admin view
 gem 'activeadmin', git: 'https://github.com/activeadmin/activeadmin.git'

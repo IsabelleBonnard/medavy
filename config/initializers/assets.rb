@@ -11,9 +11,9 @@ Dir.glob("#{Rails.root}/app/assets/images/**/").each do |path|
   Rails.application.config.assets.paths << path
 end
 
-Rails.application.config.assets.paths.each do |p|
-  puts p
-end
+# Rails.application.config.assets.paths.each do |p|
+#   puts p
+# end
 
 # Rails.application.config.assets.paths << Rails.root.join("app", "assets", "Exterior")
 # Rails.application.config.assets.paths << Rails.root.join("app", "assets", "images", "Exterior")
