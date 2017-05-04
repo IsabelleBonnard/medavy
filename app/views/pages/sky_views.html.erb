@@ -1,4 +1,4 @@
-<div class = "container narrow margin-top-height-navbar">
+<div class = "container narrow margin-top-height-navbar padding-bottom">
   <h1 class = "text-center large-margin-top green-font"><%= t('gallery.sky_views') %></h1>
   <%= render "shared/gallery-links" %>
   <div class="row">
@@ -11,6 +11,7 @@
         </div>
       </div>
     <% end %>
+    <p class = "text-center green-font"><%= t('gallery.diaporama') %></p>
     <% @ids.each do |id| %>
       <div class="col-xs-4 col-sm-3">
         <div class="cl-image-container">

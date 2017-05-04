@@ -1,11 +1,12 @@
-<div class = "container narrow margin-top-height-navbar">
+<div class = "container narrow margin-top-height-navbar padding-bottom">
   <h1 class = "text-center large-margin-top green-font"><%= t('gallery.exterior') %></h1>
   <%= render "shared/gallery-links" %>
+  <p class = "text-center green-font"><%= t('gallery.diaporama') %></p>
 
   <% @ids.each do |id| %>
     <div class="col-xs-4 col-sm-3">
       <div class="cl-image-container">
-        <%= link_to cl_image_path(id), :class => "swipebox cl-image-pages", :alt => "image", :title => "Exterior" do %>
+        <%= link_to cl_image_path(id), :class => "swipebox cl-image-pages", :alt => "image", :title => t('gallery.exterior') do %>
           <%= cl_image_tag(id) %>
         <% end %>
       </div>
