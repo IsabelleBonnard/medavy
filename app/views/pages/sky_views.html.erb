@@ -3,18 +3,20 @@
   <%= render "shared/gallery-links" %>
   <div class="row">
     <% @idvideos.each do |id| %>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-sm-3">
-        <div class="cl-image-container">
-          <div class="cl-image-pages">
-            <%= video_tag("http://res.cloudinary.com/dsosadxbk/video/upload/v1491490317/"+id+".mp4", autoplay: true, muted: true, loop: true, class: "cl-image-pages") %>
+      <div class="col-xs-12 col-sm-6">
+        <div class="cl-video-container">
+          <div class="cl-video-pages">
+            <%= video_tag("http://res.cloudinary.com/dsosadxbk/video/upload/v1491490317/"+id+".mp4", autoplay: true, muted: true, loop: true, class: "cl-video-pages") %>
           </div>
         </div>
       </div>
     <% end %>
     <% @ids.each do |id| %>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-sm-3">
+      <div class="col-xs-4 col-sm-3">
         <div class="cl-image-container">
-          <%= cl_image_tag(id, class: "cl-image-pages") %>
+          <%= link_to cl_image_path(id), :class => "swipebox cl-image-pages", :alt => "image", :title => t("gallery.interiors") do %>
+            <%= cl_image_tag(id) %>
+          <% end %>
         </div>
       </div>
     <% end %>

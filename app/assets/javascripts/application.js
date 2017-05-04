@@ -103,6 +103,7 @@ $(function () {
       afterClose: function() {}, // called after closing
       loopAtEnd: false // true will return to the first image after the last image is reached
     } );
+  $('.swipebox-video' ).swipebox-video();
 });
 
 

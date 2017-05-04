@@ -55,6 +55,20 @@ div {
         height: 10vw !important;
       }
     }
+    .cl-video-container {
+      background-color: $white;
+      margin: 10px;
+      // height: 22vw;
+      width: 100%;
+      display:flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .cl-video-pages {
+      img {
+        // height: 20vw !important;
+      }
+    }
   }
 
   // tablettes (sm)
@@ -72,6 +86,20 @@ div {
     .cl-image-pages {
       img {
         height: 10vw !important;
+      }
+    }
+    .cl-video-container {
+      background-color: $white;
+      margin: 10px;
+      height: 22vw;
+      width: 100%;
+      display:flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .cl-video-pages {
+      img {
+        height: 20vw !important;
       }
     }
   }
@@ -93,6 +121,20 @@ div {
         height: 10vw !important;
       }
     }
+    .cl-video-container {
+      background-color: $white;
+      margin: 10px;
+      height: 22vw;
+      width: 100%;
+      display:flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .cl-video-pages {
+      img {
+        height: 20vw !important;
+      }
+    }
   }
 
   // large laptops (lg and xl)
@@ -112,11 +154,26 @@ div {
         height: 10vw !important;
       }
     }
+    .cl-video-container {
+      padding-left: 22px;
+      background-color: $white;
+      margin: 10px;
+      height: 22vw;
+      // width: 100%;
+      display:flex;
+      align-items: center;
+      justify-content: space-around;
+    }
+    .cl-video-pages {
+      img {
+        height: 16vw !important;
+      }
+    }
   }
 
 
 
-.cl-image-pages {
+.cl-image-pages, .cl-video-pages {
   max-width: 100%;
   img {
     max-width: 100%;

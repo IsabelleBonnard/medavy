@@ -1,18 +1,15 @@
 <div class = "container narrow margin-top-height-navbar">
   <h1 class = "text-center green-font"><%= t('gallery.medavy_by_night') %></h1>
   <%= render "shared/gallery-links" %>
-  <div class="row">
-    <% @ids.each do |id| %>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-sm-3">
-        <div class="cl-image-container">
-          <%= cl_image_tag(id, class: "cl-image-pages") %>
-        </div>
+
+  <% @ids.each do |id| %>
+    <div class="col-xs-4 col-sm-3">
+      <div class="cl-image-container">
+        <%= link_to cl_image_path(id), :class => "swipebox cl-image-pages", :alt => "image", :title => t("gallery.medavy_by_night") do %>
+          <%= cl_image_tag(id) %>
+        <% end %>
       </div>
-    <% end %>
-  </div>
-  <%= link_to gallery_path do %>
-    <div class="back-gallery-button">
-      <i class="fi-rewind"></i> <%= t('gallery.back') %>
     </div>
   <% end %>
+
 </div>
