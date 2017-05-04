@@ -13,6 +13,29 @@
       </div>
     <% end %>
   </div>
+  <div class="row">
+      <div class="col-xs-12 col-sm-6 col-md-4 col-sm-3">
+        <div class="cl-image-container">
+          <%= link_to image_path("Exterior 1.jpg"), :class => "cl-image-pages swipebox", :alt => "image", :title => "Exterior" do %>
+            <%= image_tag("Exterior small 1.jpg") %>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-sm-3">
+        <div class="cl-image-container">
+          <%= link_to image_path("Exterior 2.jpg"), :class => "cl-image-pages swipebox", :alt => "image", :title => "Exterior" do %>
+            <%= image_tag("Exterior small 2.jpg") %>
+          <% end %>
+        </div>
+      </div>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-sm-3">
+        <div class="cl-image-container">
+          <%= link_to image_path("Exterior 3.jpg"), :class => "cl-image-pages swipebox", :alt => "image", :title => "Exterior" do %>
+            <%= image_tag("Exterior small 3.jpg") %>
+          <% end %>
+        </div>
+      </div>
+  </div>
   <!-- links -->
   <%= link_to gallery_path do %>
     <div class="back-gallery-button">
