@@ -42,13 +42,18 @@ div {
   // smartphones (xs)
 @media (max-width: $screen-sm-min) {
     .cl-image-container {
-      // background-color: $black;
+      background-color: $green;
       margin: 10px;
-      // width: 100%;
-      // height: 80vw;
+      height: 12vw;
+      width: 100%;
       display:flex;
       align-items: center;
       justify-content: space-around;
+    }
+    .cl-image-pages {
+      img {
+        height: 10vw !important;
+      }
     }
   }
 
@@ -58,7 +63,7 @@ div {
     .cl-image-container {
       background-color: $green;
       margin: 10px;
-      height: 30vw;
+      height: 12vw;
       width: 100%;
       display:flex;
       align-items: center;
@@ -66,7 +71,7 @@ div {
     }
     .cl-image-pages {
       img {
-        height: 28vw !important;
+        height: 10vw !important;
       }
     }
   }
@@ -78,14 +83,14 @@ div {
       background-color: $green;
       margin: 10px;
       width: 100%;
-      height: 25vw;
+      height: 12vw;
       display:flex;
       align-items: center;
       justify-content: space-around;
     }
     .cl-image-pages {
       img {
-        height: 22vw !important;
+        height: 10vw !important;
       }
     }
   }
@@ -96,7 +101,7 @@ div {
     .cl-image-container {
       background-color: $green;
       margin: 10px;
-      height: 20vw;
+      height: 12vw;
       width: 100%;
       display:flex;
       align-items: center;
@@ -104,7 +109,7 @@ div {
     }
     .cl-image-pages {
       img {
-        height: 18vw !important;
+        height: 10vw !important;
       }
     }
   }

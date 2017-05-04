@@ -1,40 +1,14 @@
 <div class = "container narrow margin-top-height-navbar">
-  <h1 class = "text-center green-font"><%= t('gallery.exteriors') %></h1>
+  <h1 class = "text-center green-font"><%= t('gallery.exterior') %></h1>
   <%= render "shared/gallery-links" %>
 
   <% @ids.each do |id| %>
-    <div class="col-xs-12 col-sm-6 col-md-4 col-sm-3">
+    <div class="col-xs-4 col-sm-3">
       <div class="cl-image-container">
         <%= link_to cl_image_path(id), :class => "swipebox cl-image-pages", :alt => "image", :title => "Exterior" do %>
           <%= cl_image_tag(id) %>
         <% end %>
       </div>
-    </div>
-  <% end %>
-
-  <h1>old</h1>
-
-  <%= link_to image_path("banner copy.JPG"), :class => "swipebox", :alt => "image", :title => "My Caption" do %>
-    <%= image_tag("banner.JPG") %>
-  <% end %>
-  <%= link_to image_path("Exterior 1.JPG"), :class => "swipebox", :alt => "image", :title => "My Caption" do %>
-    <%= image_tag("Exterior small 1.JPG") %>
-  <% end %>
-  <%= link_to image_path("Exterior 2.JPG"), :class => "swipebox", :alt => "image", :title => "My Caption 2" do %>
-    <%= image_tag("Exterior small 2.JPG") %>
-  <% end %>
-  <%= link_to image_path("Exterior 3.JPG"), :class => "swipebox", :alt => "image", :title => "My Caption" do %>
-    <%= image_tag("Exterior small 3.JPG") %>
-  <% end %>
-  <%= link_to image_path("Medavy 134.JPG"), :class => "swipebox", :alt => "image", :title => "My Caption" do %>
-    <%= image_tag("Medavy 134 small.JPG") %>
-  <% end %>
-  <%= link_to image_path("Medavy 330.JPG"), :class => "swipebox", :alt => "image", :title => "My Caption" do %>
-    <%= image_tag("Medavy 330 small.JPG") %>
-  <% end %>
-  <%= link_to gallery_path do %>
-    <div class="back-gallery-button">
-      <i class="fi-rewind"></i> <%= t('gallery.back') %>
     </div>
   <% end %>
 
