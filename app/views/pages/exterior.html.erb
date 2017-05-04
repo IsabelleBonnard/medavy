@@ -1,19 +1,9 @@
 <div class = "container narrow margin-top-height-navbar">
   <h1 class = "text-center green-font"><%= t('gallery.interiors') %></h1>
   <%= render "shared/gallery-links" %>
-  <!-- swipebox images -->
+  <!-- test -->
   <div class="row">
-    <% for i in 1..29 %>
-      <div class="col-xs-12 col-sm-6 col-md-4 col-sm-3">
-        <div class="cl-image-container">
-          <%= link_to image_path("Exterior #{i}.jpg"), :class => "cl-image-pages swipebox", :alt => "image", :title => "Exterior" do %>
-            <%= image_tag("Exterior small #{i}.jpg") %>
-          <% end %>
-        </div>
-      </div>
-    <% end %>
-  </div>
-  <div class="row">
+      <%= image_tag("Exterior small 1.jpg") %>
       <div class="col-xs-12 col-sm-6 col-md-4 col-sm-3">
         <div class="cl-image-container">
           <%= link_to image_path("Exterior 1.jpg"), :class => "cl-image-pages swipebox", :alt => "image", :title => "Exterior" do %>
@@ -35,6 +25,18 @@
           <% end %>
         </div>
       </div>
+  </div>
+  <!-- swipebox images -->
+  <div class="row">
+    <% for i in 1..29 %>
+      <div class="col-xs-12 col-sm-6 col-md-4 col-sm-3">
+        <div class="cl-image-container">
+          <%= link_to image_path("Exterior #{i}.jpg"), :class => "cl-image-pages swipebox", :alt => "image", :title => "Exterior" do %>
+            <%= image_tag("Exterior small #{i}.jpg") %>
+          <% end %>
+        </div>
+      </div>
+    <% end %>
   </div>
   <!-- links -->
   <%= link_to gallery_path do %>
