@@ -188,6 +188,13 @@ div {
     }
   }
 
+.cl-image-container {
+  opacity: 0.8;
+}
+
+.cl-image-container:hover {
+  opacity: 1;
+}
 
 
 .cl-image-pages, .cl-video-pages {
