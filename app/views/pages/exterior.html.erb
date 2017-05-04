@@ -1,7 +1,9 @@
 <div class = "container narrow margin-top-height-navbar">
   <h1 class = "text-center green-font"><%= t('gallery.interiors') %></h1>
   <%= render "shared/gallery-links" %>
-
+  <%= link_to image_path("banner copy.JPG"), :class => "swipebox", :alt => "image", :title => "My Caption" do %>
+    <%= image_tag("banner.JPG") %>
+  <% end %>
   <%= link_to image_path("Exterior 1.JPG"), :class => "swipebox", :alt => "image", :title => "My Caption" do %>
     <%= image_tag("Exterior small 1.JPG") %>
   <% end %>
@@ -22,4 +24,5 @@
       <i class="fi-rewind"></i> <%= t('gallery.back') %>
     </div>
   <% end %>
+
 </div>
