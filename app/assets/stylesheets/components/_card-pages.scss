@@ -16,6 +16,8 @@ div {
   opacity: 1;
 }
 
+  // smartphones (xs)
+@media (max-width: $screen-sm-min) {
  .card-pages h4 {
   font-size: 30px;
   color: $green;
@@ -27,7 +29,22 @@ div {
   color: $gray;
   text-align: justify
  }
+}
 
+  // all except smartphones (sm, md, lg and xl)
+@media (min-width: $screen-sm-min) {
+ .card-pages h4 {
+  font-size: 35px;
+  color: $green;
+  opacity: 0.8;
+ }
+
+ .card-pages p {
+  font-size: 18px;
+  color: $gray;
+  text-align: justify
+ }
+}
 .card-pages i{
   color: $green;
   font-size: 60px;

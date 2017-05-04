@@ -47,6 +47,10 @@
   margin-top: 30px;
 }
 
+.negative-top-margin {
+  margin-top: -30px;
+}
+
 .large-margin-top {
   margin-top: 40px;
 }
@@ -55,7 +59,7 @@
   margin: 0px;
 }
 
-no-padding {
+.no-padding {
   padding: 0px;
 }
 
@@ -108,9 +112,6 @@ no-padding {
    z-index: 1000000;
 }
 
-.green-font {
-  color: $green;
-}
 
 // .bg-brand-color: {
 //   background: $brand-color;
@@ -154,6 +155,8 @@ a:hover {
   align-items: center;
 }
 
+// fonts
+
 .red-font {
   color: $red;
 }
@@ -164,6 +167,24 @@ a:hover {
   text-decoration: none;
   color: white;
  }
+}
+
+.green-font {
+  color: $green !important;
+}
+
+// smart-phones (xs)
+@media (max-width: $screen-sm-min) {
+  h2 {
+    font-size: 34px;
+  }
+}
+
+// tablets, small, large and extra-large laptops (sm, md, lg, xl)
+@media (min-width: $screen-sm-min) {
+  h2 {
+    font-size: 50px;
+  }
 }
 
 .align-left {
