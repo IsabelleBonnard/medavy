@@ -1,9 +1,15 @@
 <div class = "container narrow margin-top-height-navbar">
-  <h1 class = "text-center green-font"><%= t('gallery.interiors') %></h1>
+  <h1 class = "text-center green-font"><%= t('gallery.exteriors') %></h1>
   <%= render "shared/gallery-links" %>
 
-  <%= link_to cl_image_path(@ids[0]), :class => "swipebox cl-image-pages", :alt => "image", :title => "My Caption" do %>
-    <%= cl_image_tag(@ids[0]) %>
+  <% @ids.each do |id| %>
+    <div class="col-xs-12 col-sm-6 col-md-4 col-sm-3">
+      <div class="cl-image-container">
+        <%= link_to cl_image_path(id), :class => "swipebox cl-image-pages", :alt => "image", :title => "Exterior" do %>
+          <%= cl_image_tag(id) %>
+        <% end %>
+      </div>
+    </div>
   <% end %>
 
   <h1>old</h1>
