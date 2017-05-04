@@ -1,6 +1,13 @@
 <div class = "container narrow margin-top-height-navbar">
   <h1 class = "text-center green-font"><%= t('gallery.interiors') %></h1>
   <%= render "shared/gallery-links" %>
+
+  <%= link_to cl_image_path(@ids[0]), :class => "swipebox cl-image-pages", :alt => "image", :title => "My Caption" do %>
+    <%= cl_image_tag(@ids[0]) %>
+  <% end %>
+
+  <h1>old</h1>
+
   <%= link_to image_path("banner copy.JPG"), :class => "swipebox", :alt => "image", :title => "My Caption" do %>
     <%= image_tag("banner.JPG") %>
   <% end %>
