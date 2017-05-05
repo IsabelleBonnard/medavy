@@ -2,10 +2,19 @@
   <div class="row">
 
     <div class="col-xs-12 col-sm-4 col-md-2 col-md-offset-1">
-      <%= link_to gallery_exterior_path do %>
+      <%= link_to cl_image_path(@exterior_ids.first), :class => "swipebox", :alt => "image", :title => t('gallery.exterior') do %>
         <div class="card-video">
           <i class="fi-foot"></i>
           <h4> <%= t('gallery.exterior') %></h4>
+        </div>
+      <% end %>
+      <% @exterior_ids[1..-1].each do |id| %>
+        <div class="col-xs-4 col-sm-3">
+          <div class="hidden cl-image-container">
+            <%= link_to cl_image_path(id), :class => "swipebox cl-image-pages", :alt => "image", :title => t('gallery.exterior') do %>
+              <div> <%= cl_image_tag(id) %> </div>
+            <% end %>
+          </div>
         </div>
       <% end %>
     </div>

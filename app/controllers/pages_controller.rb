@@ -14,6 +14,10 @@ class PagesController < ApplicationController
   end
 
   def gallery
+    url = "http://res.cloudinary.com/dsosadxbk/image/list/exterior.json"
+    my_json = JSON.parse(open(url).read)
+    resources = my_json["resources"]
+    @exterior_ids = resources.map {|res| res["public_id"]}
   end
 
   def exterior
