@@ -32,7 +32,7 @@ fr:
     open2_html: "La dernière visite du Château commence à 17h45"
     open3_html: "Le site sera également ouvert à la visite pour les journées du patrimoine les 16 et 17 septembre."
     visits: "A voir"
-    details: "Cliquer pour plus de détails"
+    details: "Cliquez pour plus de détails"
     park: "le parc, la chapelle et le colombier"
     castle: "le château"
     peter_tour: "la tour Saint Pierre"
@@ -84,7 +84,7 @@ fr:
     medavy_by_night: "Medavy by night"
     sky_views: "Vues du ciel"
     back: "Retour à la gallery"
-    diaporama: "Cliquer sur les photos pour visionner le diaporama"
+    diaporama: "Cliquez sur les photos pour visionner le diaporama"
 
   questions:
     intro: "Bienvenue dans le quizz de Médavy!"
