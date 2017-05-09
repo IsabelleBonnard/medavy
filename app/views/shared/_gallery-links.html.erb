@@ -54,10 +54,10 @@
     </div>
 
     <div class="col-xs-6 col-xs-offset-6 col-sm-4 col-sm-offset-0 col-sm-offset-2 col-md-offset-0 col-md-2">
-      <%= link_to cl_image_path(@skyviews_ids.first), :class => "swipebox", :alt => "image", :title => t('gallery.skyviews') do %>
+      <%= link_to cl_image_path(@skyviews_ids.first), :class => "swipebox", :alt => "image", :title => t('gallery.sky_views') do %>
         <div class="card-video">
           <i class="fi-play"></i>
-          <h4> <%= t('gallery.skyviews') %></h4>
+          <h4> <%= t('gallery.sky_views') %></h4>
         </div>
       <% end %>
       <% @skyviews_ids[1..-1].each do |id| %>
@@ -72,10 +72,10 @@
     </div>
 
     <div class="col-xs-6 col-xs-offset-6 col-sm-4 col-sm-offset-0 col-md-2">
-      <%= link_to cl_image_path(@night_ids.first), :class => "swipebox", :alt => "image", :title => t('gallery.night') do %>
+      <%= link_to cl_image_path(@night_ids.first), :class => "swipebox", :alt => "image", :title => t('gallery.meday_by_night') do %>
         <div class="card-video">
           <i class="fi-lightbulb"></i>
-          <h4> <%= t('gallery.night') %></h4>
+          <h4> <%= t('gallery.medavy_by_night') %></h4>
         </div>
       <% end %>
       <% @night_ids[1..-1].each do |id| %>
