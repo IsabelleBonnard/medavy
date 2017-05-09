@@ -1,44 +1,95 @@
-<div class="row">
-  <!-- Retour à la gallerie -->
-  <div class="col-xs-12 col-sm-6">
-    <%= link_to gallery_path do %>
-      <div class="back-gallery-button">
-        <i class="fi-rewind"></i> <%= t('gallery.back') %>
-      </div>
-    <% end %>
-  </div>
-  <!-- liens vers les autres pages de la gallerie -->
-  <div class="col-xs-12 col-sm-6">
-    <div class="gallery-links">
-      <%= link_to gallery_exterior_path do %>
-        <div class="card-video-link">
+<div class=" text-center features">
+  <div class="row">
+
+    <div class="col-xs-6 col-xs-offset-6 col-sm-4 col-md-2 col-md-offset-1">
+      <%= link_to cl_image_path(@exterior_ids.first), :class => "swipebox", :alt => "image", :title => t('gallery.exterior') do %>
+        <div class="card-video">
           <i class="fi-foot"></i>
+          <h4> <%= t('gallery.exterior') %></h4>
         </div>
       <% end %>
-
-      <%= link_to gallery_interiors_path do %>
-        <div class="card-video-link">
-          <i class="fi-crown"></i>
-        </div>
-      <% end %>
-
-      <%= link_to gallery_work_path do %>
-        <div class="card-video-link">
-          <i class="fi-flag"></i>
-        </div>
-      <% end %>
-
-      <%= link_to gallery_SkyViews_path do %>
-        <div class="card-video-link">
-          <i class="fi-play"></i>
-        </div>
-      <% end %>
-
-      <%= link_to gallery_MedavyByNight_path do %>
-        <div class="card-video-link">
-          <i class="fi-lightbulb"></i>
+      <% @exterior_ids[1..-1].each do |id| %>
+        <div class="col-xs-4 col-sm-3">
+          <div class="hidden cl-image-container">
+            <%= link_to cl_image_path(id), :class => "swipebox cl-image-pages", :alt => "image", :title => t('gallery.exterior') do %>
+              <div> </div>
+            <% end %>
+          </div>
         </div>
       <% end %>
     </div>
+
+    <div class="col-xs-6 col-xs-offset-6 col-sm-4 col-md-2">
+      <%= link_to cl_image_path(@interiors_ids.first), :class => "swipebox", :alt => "image", :title => t('gallery.interiors') do %>
+        <div class="card-video">
+          <i class="fi-crown"></i>
+          <h4> <%= t('gallery.interiors') %></h4>
+        </div>
+      <% end %>
+      <% @interiors_ids[1..-1].each do |id| %>
+        <div class="col-xs-4 col-sm-3">
+          <div class="hidden cl-image-container">
+            <%= link_to cl_image_path(id), :class => "swipebox cl-image-pages", :alt => "image", :title => t('gallery.interiors') do %>
+              <div> </div>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="col-xs-6 col-xs-offset-6 col-sm-4 col-md-2">
+      <%= link_to cl_image_path(@work_ids.first), :class => "swipebox", :alt => "image", :title => t('gallery.work') do %>
+        <div class="card-video">
+          <i class="fi-flag"></i>
+          <h4> <%= t('gallery.work') %></h4>
+        </div>
+      <% end %>
+      <% @work_ids[1..-1].each do |id| %>
+        <div class="col-xs-4 col-sm-3">
+          <div class="hidden cl-image-container">
+            <%= link_to cl_image_path(id), :class => "swipebox cl-image-pages", :alt => "image", :title => t('gallery.work') do %>
+              <div> </div>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="col-xs-6 col-xs-offset-6 col-sm-4 col-sm-offset-2 col-md-offset-0 col-md-2">
+      <%= link_to cl_image_path(@skyviews_ids.first), :class => "swipebox", :alt => "image", :title => t('gallery.skyviews') do %>
+        <div class="card-video">
+          <i class="fi-play"></i>
+          <h4> <%= t('gallery.skyviews') %></h4>
+        </div>
+      <% end %>
+      <% @skyviews_ids[1..-1].each do |id| %>
+        <div class="col-xs-4 col-sm-3">
+          <div class="hidden cl-image-container">
+            <%= link_to cl_image_path(id), :class => "swipebox cl-image-pages", :alt => "image", :title => t('gallery.sky_views') do %>
+              <div> </div>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
+    <div class="col-xs-6 col-xs-offset-6 col-sm-4 col-md-2">
+      <%= link_to cl_image_path(@night_ids.first), :class => "swipebox", :alt => "image", :title => t('gallery.night') do %>
+        <div class="card-video">
+          <i class="fi-lightbulb"></i>
+          <h4> <%= t('gallery.night') %></h4>
+        </div>
+      <% end %>
+      <% @night_ids[1..-1].each do |id| %>
+        <div class="col-xs-4 col-sm-3">
+          <div class="hidden cl-image-container">
+            <%= link_to cl_image_path(id), :class => "swipebox cl-image-pages", :alt => "image", :title => t('gallery.medavy_by_night') do %>
+              <div> </div>
+            <% end %>
+          </div>
+        </div>
+      <% end %>
+    </div>
+
   </div>
 </div>

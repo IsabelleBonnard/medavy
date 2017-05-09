@@ -18,6 +18,26 @@ class PagesController < ApplicationController
     my_json = JSON.parse(open(url).read)
     resources = my_json["resources"]
     @exterior_ids = resources.map {|res| res["public_id"]}
+
+    url = "http://res.cloudinary.com/dsosadxbk/image/list/castle.json"
+    my_json = JSON.parse(open(url).read)
+    resources = my_json["resources"]
+    @interiors_ids = resources.map {|res| res["public_id"]}
+
+    url = "http://res.cloudinary.com/dsosadxbk/image/list/skyviews.json"
+    my_json = JSON.parse(open(url).read)
+    resources = my_json["resources"]
+    @skyviews_ids = resources.map {|res| res["public_id"]}
+
+    url = "http://res.cloudinary.com/dsosadxbk/image/list/work.json"
+    my_json = JSON.parse(open(url).read)
+    resources = my_json["resources"]
+    @work_ids = resources.map {|res| res["public_id"]}
+
+    url = "http://res.cloudinary.com/dsosadxbk/image/list/night.json"
+    my_json = JSON.parse(open(url).read)
+    resources = my_json["resources"]
+    @night_ids = resources.map {|res| res["public_id"]}
   end
 
   def exterior

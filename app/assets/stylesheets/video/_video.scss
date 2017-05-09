@@ -39,12 +39,6 @@
   bottom: 90px;
 }
 
-@media (max-width: $screen-sm-min) {
-  .cards-video {
-    display: none;
-  }
-}
-
 .gallery-links-smartphones {
   position: absolute;
   z-index: 4;
@@ -57,12 +51,6 @@
     width: 40px;
     height: 20px;
     text-align: center;
-  }
-}
-
-@media (min-width: $screen-sm-min) {
-  .gallery-links-smartphones {
-    display: none;
   }
 }
 
