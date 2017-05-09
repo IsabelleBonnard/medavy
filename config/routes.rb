@@ -7,6 +7,7 @@ Rails.application.routes.draw do
   scope '(:locale)', locale: /en/ do
     root to: 'pages#home'
     resources :messages, only: [:new, :create]
+    get 'google6464ea87a0b2b52b' => 'pages#google6464ea87a0b2b52b'
     get 'history' => 'pages#history'
     get 'quizz' => 'questions#intro'
     get 'questions/initialization' => 'questions#initialization'
