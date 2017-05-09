@@ -19,7 +19,7 @@ class PagesController < ApplicationController
     resources = my_json["resources"]
     @exterior_ids = resources.map {|res| res["public_id"]}
 
-    url = "http://res.cloudinary.com/dsosadxbk/image/list/castle.json"
+    url = "http://res.cloudinary.com/dsosadxbk/image/list/interiors.json"
     my_json = JSON.parse(open(url).read)
     resources = my_json["resources"]
     @interiors_ids = resources.map {|res| res["public_id"]}
