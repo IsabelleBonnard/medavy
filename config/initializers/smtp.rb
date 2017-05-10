@@ -10,12 +10,12 @@
 #   enable_starttls_auto: true
 # }
 
-# Mail sent via zadl.fr (from contact.medavy@zadl.fr)
+# Mail sent via zadl.fr (from contact.medavy@zadl.fr) / domain: 'heroku.com' not working
 
 ActionMailer::Base.smtp_settings = {
   address: ENV['POSTMARK_SMTP_SERVER'],
   port: '25',
-  domain: 'heroku.com',
+  domain: 'zadl.fr',
   user_name: ENV['POSTMARK_API_KEY'],
   password: ENV['POSTMARK_API_TOKEN'],
   authentication: :cram_md5,
