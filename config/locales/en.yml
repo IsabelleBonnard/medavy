@@ -31,6 +31,7 @@ en:
     open1_html: "In 2017, the Château de Médavy and its park welcome you <strong>every day from July 1rst to September 3rd</strong>, from 1pm to 7pm."
     open2_html: "Last visit of the Castle starts at 5:45pm"
     open3_html: "The site is also open one extra week-end (Journées du Patrimoine): September 16th and 17th."
+    telephone: "+33 (0)2 33 35 05 09"
     visits: "Our tours"
     details: "Click to get more details"
     park: "the park, the chapel and the dovecote"
@@ -51,6 +52,8 @@ en:
     castle_price: "price : 9 euros/adulte, 6 euros/young under 18"
     park_price: "price : 6 euros/adulte, 4 euros/young under 18"
     peter_price: "price : 9 euros/adulte, in addition to one of the other tours"
+    nearby: "Nearby"
+    description_weekend61: "Find ideas for the week-end on"
 
   history:
     title: "History of Medavy Castle"

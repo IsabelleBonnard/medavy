@@ -31,6 +31,7 @@ fr:
     open1_html: "En 2017, le Château et son parc vous accueillent <strong>tous les jours du samedi 1er juillet au dimanche 3 septembre</strong> de 13h à 19h."
     open2_html: "La dernière visite du Château commence à 17h45"
     open3_html: "Le site sera également ouvert à la visite pour les journées du patrimoine les 16 et 17 septembre."
+    telephone: "+33 (0)2 33 35 05 09"
     visits: "A voir"
     details: "Cliquez pour plus de détails"
     park: "le parc, la chapelle et le colombier"
@@ -51,6 +52,8 @@ fr:
     castle_price: "prix : 9 euros/adulte, 6 euros/jeune de moins de 18 ans"
     park_price: "prix : 6 euros/adulte, 4 euros/jeune de moins de 18 ans"
     peter_price: "prix : 9 euros/adulte, en supplément de l’une des deux autres visites"
+    nearby: "Aux alentours"
+    description_weekend61: "Trouvez des idées pour des activités ce weekend sur"
 
   history:
     title: "Histoire du Château de Médavy"

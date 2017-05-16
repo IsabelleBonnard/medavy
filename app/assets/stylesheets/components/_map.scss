@@ -4,19 +4,19 @@
   border: solid 3px $light-green;
   box-shadow: 1px 1px 1px $green;
   width: 100%;
-  height: 300px;
+  min-height: 300px;
 }
 
 // smart-phones (xs)
 @media (max-width: $screen-sm-min) {
-  #map {
+  #map, .opening-hours {
     margin-top: 35px;
   }
 }
 
 // tablets, small, large and extra-large laptops (sm, md, lg, xl)
 @media (min-width: $screen-sm-min) {
-  #map {
+  #map, .opening-hours {
     margin-top: 0px;
   }
 }

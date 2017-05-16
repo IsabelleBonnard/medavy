@@ -20,12 +20,18 @@
     <p class="large-margin-bottom"><%= t('root.open0_html') %></p>
     <div class="map-box">
       <div class="map-left">
-        <div class="intro-text">
+        <div class="intro-text" id = "leftdiv">
           <div class="opening-hours">
             <h4><%= t('root.schedule') %></h4>
             <p><%= t('root.open1_html') %></p>
             <p><%= t('root.open2_html') %></p>
             <p><%= t('root.open3_html') %></p>
+          </div>
+        </div>
+        <div class = "text-center">
+          <div class="btn-phone">
+            <i class="fi-telephone"></i>
+            <%= t('root.telephone') %>
           </div>
         </div>
       </div>
@@ -112,7 +118,7 @@
   </div>
 </div>
     <!-- Other options -->
-<div class="wrapper wrapper-home large-padding-bottom">
+<div class="wrapper wrapper-home">
   <div class="container narrow">
     <div class=" text-center features">
       <div class="row">
@@ -155,6 +161,25 @@
               <p><%= t('root.contact')%></p>
             </div>
           <% end %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- Aux alentours -->
+<div class="wrapper wrapper-home large-padding-bottom">
+  <div class="container narrow">
+    <div class=" text-center features">
+      <div class="row">
+        <h2 class="title text-center"> <%= t('root.nearby') %></h2>
+        <div class="exterior-links">
+          <ul>
+            <li>
+              <%= t('root.description_weekend61') %>
+              <%= link_to "Week-end61.fr", "http://weekend61.fr/", target: :_blank, class: "exterior-link" %>
+            </li>
+          </ul>
         </div>
       </div>
     </div>

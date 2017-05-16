@@ -65,6 +65,16 @@ $(function () {
       afterClose: function() {}, // called after closing
       loopAtEnd: false // true will return to the first image after the last image is reached
     } );
+  var right=document.getElementById('map').clientHeight;
+  var left=document.getElementById('leftdiv').clientHeight;
+  if(left>right)
+  {
+      document.getElementById('map').style.height = left+'px';
+  }
+  else
+  {
+      document.getElementById('leftdiv').style.height = right+'px';
+  }
 });
 
 
