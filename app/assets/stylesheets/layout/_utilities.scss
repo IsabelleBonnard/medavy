@@ -59,6 +59,10 @@
   margin-top: 40px !important;
 }
 
+.margin-top-5 {
+  margin-top: 5px !important;
+}
+
 .margin-top-30 {
   margin-top: 30px !important;
 }
@@ -124,7 +128,13 @@
    z-index: 1000000;
 }
 
+.green-shadow {
+  text-shadow: 1px 1px $green;
+}
 
+.white-shadow {
+  text-shadow: 1px 1px $white;
+}
 // .bg-brand-color: {
 //   background: $brand-color;
 // }

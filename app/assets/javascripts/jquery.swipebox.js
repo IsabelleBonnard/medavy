@@ -42,7 +42,7 @@
 					<div id="swipebox-container">\
 						<div id="swipebox-slider"></div>\
 						<div id="swipebox-top-bar">\
-							<div id="swipebox-title"></div>\
+							<h1 class="margin-top-5 green-shadow"><div id="swipebox-title"></div></h1>\
 						</div>\
 						<div id="swipebox-bottom-bar">\
 							<div id="swipebox-arrows">\
