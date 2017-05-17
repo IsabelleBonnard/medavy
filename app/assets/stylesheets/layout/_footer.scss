@@ -11,11 +11,21 @@
 
 // smart-phones (xs)
 @media (max-width: $screen-sm-min) {
-  padding: 0px 0;
+  #footer {
+    padding: 0px 0;
+  }
+  .footer-left {
+    margin-top: 30px !important;
+  }
+  .footer-right {
+    margin-top: 9px !important;
+  }
 }
 // tablets, small, large and extra-large laptops (sm, md, lg, xl)
 @media (min-width: $screen-sm-min) {
-  padding: 30px 0;
+  #footer {
+    padding: 30px 0;
+  }
 }
 
 #footer p {
@@ -47,9 +57,12 @@
   padding-top: 10px;
 }
 
+
+
 #footer a:hover {
   color: $light-gray;
 }
+
 
 
 
