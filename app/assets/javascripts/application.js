@@ -65,16 +65,42 @@ $(function () {
       afterClose: function() {}, // called after closing
       loopAtEnd: false // true will return to the first image after the last image is reached
     } );
-  var right=document.getElementById('map').clientHeight;
-  var left=document.getElementById('leftdiv').clientHeight;
-  if(left>right)
-  {
-      document.getElementById('map').style.height = left+'px';
+  // aligner la hauteur de la map et de la description sur la home page
+  if (document.getElementById('map')) {
+    console.log('map');
+    var right=document.getElementById('map').clientHeight;
+    var left=document.getElementById('leftdiv').clientHeight;
+    if(left>right)
+    {
+        document.getElementById('map').style.height = left+'px';
+    }
+    else
+    {
+        document.getElementById('leftdiv').style.height = right+'px';
+    }
   }
-  else
-  {
-      document.getElementById('leftdiv').style.height = right+'px';
+  // cliquer vers une div sur la page history
+  $.fn.goTo = function() {
+    $('html, body').animate({
+        scrollTop: $(this).offset().top - 30 + 'px'
+    }, 'fast');
+    return this; // for chaining...
   }
+  $('#li-origins').click(function(event) {
+    $('#card-origins').goTo();
+  });
+  $('#li-rouxel').click(function(event) {
+    $('#card-rouxel').goTo();
+  });
+  $('#li-montregard').click(function(event) {
+    $('#card-montregard').goTo();
+  });
+  $('#li-laroque').click(function(event) {
+    $('#card-laroque').goTo();
+  });
+  $('#li-recent').click(function(event) {
+    $('#card-recent').goTo();
+  });
 });
 
 
