@@ -115,6 +115,7 @@ en:
     signature: "Medavy's Team"
     email : "Contact email: "
     Access: "Acess"
+    cancel: "Cancel and go back to home page"
 
   footer:
     contact: "Contact us"

@@ -114,6 +114,7 @@ fr:
     signature: "L'équipe Medavy"
     email : "Email de contact : "
     Access: "Accéder"
+    cancel: "Annuler et retourner à la page accueil"
 
   footer:
     contact: "Contactez-nous"

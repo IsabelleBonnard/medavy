@@ -12,8 +12,9 @@
       <div class="margin-top">
         <%= f.input :content, placeholder: t('messages.content-placeholder'), label: false %>
       </div>
-      <div class="margin-top margin-bottom">
+      <div class="margin-top margin-bottom text-center">
         <%= f.submit t('messages.send'), class: "btn-play margin-top" %>
+        <%= link_to t('messages.cancel'), root_path, class: "text-center" %>
       </div>
     <% end %>
   </div>
