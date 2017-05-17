@@ -81,13 +81,8 @@ en:
 
   gallery:
     welcome: "Welcome to our photo gallery!"
-    exterior: "Exterior"
-    interiors: "Interiors"
-    work: "Work"
-    medavy_by_night: "Medavy by night"
-    sky_views: "Aerial views"
     back: "Back to gallery"
-    diaporama: "Click on photos to launch slideshow"
+    diaporama: "Click to launch slideshow"
 
   questions:
     intro: "Welcome to Medavy quizz!"

@@ -81,13 +81,7 @@ fr:
 
   gallery:
     welcome: "Bienvenue dans la gallerie photos !"
-    exterior: "Extérieur"
-    interiors: "Intérieurs"
-    work: "Travaux"
-    medavy_by_night: "Medavy by night"
-    sky_views: "Vues du ciel"
-    back: "Retour à la gallery"
-    diaporama: "Cliquez sur les photos pour visionner le diaporama"
+    diaporama: "Cliquez pour lancer le diaporama"
 
   questions:
     intro: "Bienvenue dans le quizz de Médavy!"

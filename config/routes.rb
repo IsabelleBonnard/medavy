@@ -17,11 +17,6 @@ Rails.application.routes.draw do
     get 'results' => 'quizz_records#new', as: :results
     post 'quizz_records/create' => 'quizz_records#create'
     get 'gallery' => 'pages#gallery'
-    get 'gallery/work' => 'pages#work'
-    get 'gallery/interiors' => 'pages#interiors'
-    get 'gallery/exterior' => 'pages#exterior'
-    get 'gallery/SkyViews' => 'pages#sky_views'
-    get 'gallery/MedavyByNight' => 'pages#medavy_by_night'
   end
   ActiveAdmin.routes(self)
 
