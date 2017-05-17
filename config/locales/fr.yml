@@ -123,3 +123,9 @@ fr:
   footer:
     contact: "Contactez-nous"
     legal_information: "Mentions légales"
+
+  legal:
+    legal_information: "Mentions légales"
+    owner: "Proprietaire: Monsieur Jean-Louis Charon."
+    responsable: "Responsable: Madame Myriam Illien."
+    address: "Adresse: Château de Medavy 61 570 Medavy."

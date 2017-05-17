@@ -2,7 +2,7 @@ require 'open-uri'
 require 'json'
 
 class PagesController < ApplicationController
-  skip_before_action :authenticate_user!, only: [:google6464ea87a0b2b52b, :home, :about, :history, :gallery, :exterior, :interiors, :medavy_by_night, :sky_views, :work, :send_contact_message]
+  skip_before_action :authenticate_user!, only: [:google6464ea87a0b2b52b, :home, :about, :history, :gallery, :exterior, :interiors, :medavy_by_night, :sky_views, :work, :send_contact_message, :legal]
 
   def home
     @hash_position = [{:lat=>48.6785688, :lng=>0.09740069999998013}]
