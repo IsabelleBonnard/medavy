@@ -427,7 +427,7 @@
 							$this.setTimeout();
 						} else {
 							$this.clearTimeout();
-							$this.hideBars();
+							// $this.hideBars();
 						}
 					}
 
@@ -450,7 +450,7 @@
 					var $this = this;
 					$this.clearTimeout();
 					$this.timeout = window.setTimeout( function() {
-							$this.hideBars();
+							// $this.hideBars();
 						},
 
 						plugin.settings.hideBarsDelay
@@ -488,12 +488,12 @@
 			hideBars : function () {
 				var bars = $( '#swipebox-top-bar, #swipebox-bottom-bar' );
 				if ( this.doCssTrans() ) {
-					bars.removeClass( 'visible-bars' );
+					// bars.removeClass( 'visible-bars' );
 				} else {
 					$( '#swipebox-top-bar' ).animate( { top : '-50px' }, 500 );
 					$( '#swipebox-bottom-bar' ).animate( { bottom : '-50px' }, 500 );
 					setTimeout( function() {
-						bars.removeClass( 'visible-bars' );
+						// bars.removeClass( 'visible-bars' );
 					}, 1000 );
 				}
 			},
@@ -522,7 +522,7 @@
 
 				}, function() {
 					if ( plugin.settings.hideBarsDelay > 0 ) {
-						bars.removeClass( 'visible-bars' );
+						// bars.removeClass( 'visible-bars' );
 						$this.setTimeout();
 					}
 
@@ -756,7 +756,7 @@
 				if ( a.search ) {
 					qs = JSON.parse( '{"' + a.search.toLowerCase().replace('?','').replace(/&/g,'","').replace(/=/g,'":"') + '"}' );
 				}
-				
+
 				// Extend with custom data
 				if ( $.isPlainObject( customData ) ) {
 					qs = $.extend( qs, customData, plugin.settings.queryStringData ); // The dev has always the final word
@@ -941,6 +941,7 @@
 				}
 			}
 		};
+
 
 		plugin.init();
 	};

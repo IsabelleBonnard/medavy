@@ -105,7 +105,7 @@ html.swipebox-html.swipebox-touch {
 }
 
 #swipebox-bottom-bar {
-  bottom: -50px;
+  bottom: vh/2;
 }
 #swipebox-bottom-bar.visible-bars {
   -webkit-transform: translate3d(0, -50px, 0);

@@ -104,7 +104,7 @@ html.swipebox-html.swipebox-touch {
 }
 
 #swipebox-bottom-bar {
-  bottom: -50px;
+  bottom: calc(100vh/2);
 }
 #swipebox-bottom-bar.visible-bars {
   -webkit-transform: translate3d(0, -50px, 0);
@@ -278,14 +278,20 @@ html.swipebox-html.swipebox-touch {
 /* Skin
 --------------------------*/
 #swipebox-overlay {
-  background: $green;
+  background: $black;
 }
 
 #swipebox-bottom-bar,
 #swipebox-top-bar {
   text-shadow: 1px 1px 1px black;
-  background: $green;
   opacity: 0.95;
+}
+#swipebox-bottom-bar {
+  background: rgba(1,1,1,0);
+}
+
+#swipebox-top-bar {
+  background: $black;
 }
 
 #swipebox-top-bar {
