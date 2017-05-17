@@ -120,5 +120,8 @@ en:
     email : "Contact email: "
     Access: "Acess"
 
+  footer:
+    contact: "Contact us"
+    legal_information: "Legal information"
 
 

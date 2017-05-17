@@ -9,6 +9,7 @@ Rails.application.routes.draw do
     resources :messages, only: [:new, :create]
     get 'google6464ea87a0b2b52b' => 'pages#google6464ea87a0b2b52b'
     get 'history' => 'pages#history'
+    get 'legal' => 'pages#legal'
     get 'quizz' => 'questions#intro'
     get 'questions/initialization' => 'questions#initialization'
     get 'questions/incrementation/:id' => 'questions#incrementation'

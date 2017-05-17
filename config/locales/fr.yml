@@ -119,3 +119,7 @@ fr:
     signature: "L'équipe Medavy"
     email : "Email de contact : "
     Access: "Accéder"
+
+  footer:
+    contact: "Contactez-nous"
+    legal_information: "Mentions légales"

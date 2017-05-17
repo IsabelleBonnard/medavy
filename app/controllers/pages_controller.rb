@@ -10,6 +10,9 @@ class PagesController < ApplicationController
     # [{:lat=>17.4015693, :lng=>78.5199399, :picture=>{:url=>"/assets/custom_marker-a56fb984f2a4979b7f681ba7e0b59f1562cea1810f8089729323a1cfb7cb532e.png", :width=>32, :height=>32}}]
   end
 
+  def legal
+  end
+
   def history
   end
 
