@@ -93,8 +93,9 @@ html.swipebox-html.swipebox-touch {
   background: url(<%= asset_data_uri 'loader.gif' %>) no-repeat center center;
 }
 
-#swipebox-bottom-bar,
-#swipebox-top-bar {
+#swipebox-middle-bar,
+#swipebox-top-bar,
+#swipebox-bottom-bar,  {
   -webkit-transition: 0.5s;
           transition: 0.5s;
   position: absolute;
@@ -104,23 +105,39 @@ html.swipebox-html.swipebox-touch {
   width: 100%;
 }
 
-#swipebox-bottom-bar {
+#swipebox-middle-bar {
   bottom: calc(100vh/2 - 40px);
 }
-#swipebox-bottom-bar.visible-bars {
+
+#swipebox-bottom-bar {
+  bottom: 50px;
+}
+#swipebox-top-bar {
+  top: -50px;
+}
+
+#swipebox-middle-bar.visible-bars {
   -webkit-transform: translate3d(0, -50px, 0);
           transform: translate3d(0, -50px, 0);
 }
 
-#swipebox-top-bar {
-  top: -50px;
-}
 #swipebox-top-bar.visible-bars {
   -webkit-transform: translate3d(0, 50px, 0);
           transform: translate3d(0, 50px, 0);
 }
 
+#swipebox-bottom-bar.visible-bars {
+  -webkit-transform: translate3d(0, 50px, 0);
+          transform: translate3d(0, 6px, 0);
+}
+
 #swipebox-title {
+  display: block;
+  width: 100%;
+  text-align: center;
+}
+
+#swipebox-content {
   display: block;
   width: 100%;
   text-align: center;
@@ -282,22 +299,30 @@ html.swipebox-html.swipebox-touch {
   background: $black;
 }
 
-#swipebox-bottom-bar,
-#swipebox-top-bar {
+#swipebox-middle-bar,
+#swipebox-top-bar,
+#swipebox-bottom-bar {
   text-shadow: 1px 1px 1px black;
   opacity: 0.95;
 }
-#swipebox-bottom-bar {
+#swipebox-middle-bar {
   background: rgba(1,1,1,0);
 }
 
-#swipebox-top-bar {
+#swipebox-top-bar, #swipebox-bottom-bar  {
   background: $black;
 }
 
 #swipebox-top-bar {
   color: white !important;
   font-size: 15px;
+  line-height: 43px;
+  /*font-family: Helvetica, Arial, sans-serif;*/
+}
+
+#swipebox-bottom-bar {
+  color: white !important;
+  font-size: 10px;
   line-height: 43px;
   /*font-family: Helvetica, Arial, sans-serif;*/
 }

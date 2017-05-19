@@ -44,7 +44,7 @@
 						<div id="swipebox-top-bar">\
 							<div id="swipebox-title"></div>\
 						</div>\
-						<div id="swipebox-bottom-bar">\
+						<div id="swipebox-middle-bar">\
 							<div id="swipebox-arrows">\
 								<a id="swipebox-prev" ></a>\
 								<a id="swipebox-next"></a>\
@@ -178,7 +178,7 @@
 				}
 
 				if ( isMobile && plugin.settings.removeBarsOnMobile ) {
-					$( '#swipebox-bottom-bar, #swipebox-top-bar' ).remove();
+					$( '#swipebox-middle-bar, #swipebox-top-bar' ).remove();
 				}
 
 				$.each( elements,  function() {
@@ -290,7 +290,7 @@
 					vSwipMinDistance = 50,
 					startCoords = {},
 					endCoords = {},
-					bars = $( '#swipebox-top-bar, #swipebox-bottom-bar' ),
+					bars = $( '#swipebox-top-bar, #swipebox-middle-bar' ),
 					slider = $( '#swipebox-slider' );
 
 				bars.addClass( 'visible-bars' );
@@ -470,12 +470,12 @@
 			 * Show navigation and title bars
 			 */
 			showBars : function () {
-				var bars = $( '#swipebox-top-bar, #swipebox-bottom-bar' );
+				var bars = $( '#swipebox-top-bar, #swipebox-middle-bar' );
 				if ( this.doCssTrans() ) {
 					bars.addClass( 'visible-bars' );
 				} else {
 					$( '#swipebox-top-bar' ).animate( { top : 0 }, 500 );
-					$( '#swipebox-bottom-bar' ).animate( { bottom : 0 }, 500 );
+					$( '#swipebox-middle-bar' ).animate( { bottom : 0 }, 500 );
 					setTimeout( function() {
 						bars.addClass( 'visible-bars' );
 					}, 1000 );
@@ -486,12 +486,12 @@
 			 * Hide navigation and title bars
 			 */
 			hideBars : function () {
-				var bars = $( '#swipebox-top-bar, #swipebox-bottom-bar' );
+				var bars = $( '#swipebox-top-bar, #swipebox-middle-bar' );
 				if ( this.doCssTrans() ) {
 					bars.removeClass( 'visible-bars' );
 				} else {
 					$( '#swipebox-top-bar' ).animate( { top : '-50px' }, 500 );
-					$( '#swipebox-bottom-bar' ).animate( { bottom : '-50px' }, 500 );
+					$( '#swipebox-middle-bar' ).animate( { bottom : '-50px' }, 500 );
 					setTimeout( function() {
 						bars.removeClass( 'visible-bars' );
 					}, 1000 );
@@ -503,7 +503,7 @@
 			 */
 			animBars : function () {
 				var $this = this,
-					bars = $( '#swipebox-top-bar, #swipebox-bottom-bar' );
+					bars = $( '#swipebox-top-bar, #swipebox-middle-bar' );
 
 				bars.addClass( 'visible-bars' );
 				$this.setTimeout();
@@ -515,7 +515,7 @@
 					}
 				} );
 
-				$( '#swipebox-bottom-bar' ).hover( function() {
+				$( '#swipebox-middle-bar' ).hover( function() {
 					$this.showBars();
 					bars.addClass( 'visible-bars' );
 					$this.clearTimeout();
@@ -562,7 +562,7 @@
 
 				if ( elements.length < 2 ) {
 
-					$( '#swipebox-bottom-bar' ).hide();
+					$( '#swipebox-middle-bar' ).hide();
 
 					if ( undefined === elements[ 1 ] ) {
 						$( '#swipebox-top-bar' ).hide();
@@ -612,6 +612,7 @@
 				$( '#swipebox-slider .slide' ).removeClass( 'current' );
 				$( '#swipebox-slider .slide' ).eq( index ).addClass( 'current' );
 				this.setTitle( index );
+        this.setContent( index );
 
 				if ( isFirst ) {
 					slider.fadeIn();
@@ -721,6 +722,23 @@
 					$( '#swipebox-top-bar' ).hide();
 				}
 			},
+
+      setContent : function ( index ) {
+        var content = null;
+
+        $( '#swipebox-content' ).empty();
+
+        if ( elements[ index ] !== undefined ) {
+          content = elements[ index ].content;
+        }
+
+        if ( content ) {
+          $( '#swipebox-bottom-bar' ).show();
+          $( '#swipebox-content' ).append( content );
+        } else {
+          $( '#swipebox-bottom-bar' ).hide();
+        }
+      },
 
 			/**
 			 * Check if the URL is a video

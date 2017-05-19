@@ -20,11 +20,11 @@ class PagesController < ApplicationController
   end
 
   def gallery
-    url = "http://res.cloudinary.com/dsosadxbk/image/list/medavy.json"
-    my_json = JSON.parse(open(url).read)
-    resources = my_json["resources"]
-    @photo_ids = resources.map {|res| res["public_id"]}
-    @photo_ids.reverse!
+    # url = "http://res.cloudinary.com/dsosadxbk/image/list/medavy.json"
+    # my_json = JSON.parse(open(url).read)
+    # resources = my_json["resources"]
+    # @photo_ids = resources.map {|res| res["public_id"]}
+    # @photo_ids.reverse!
   end
 
 end

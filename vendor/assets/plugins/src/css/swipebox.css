@@ -93,7 +93,7 @@ html.swipebox-html.swipebox-touch {
   background: image-url('loader.gif') no-repeat center center;
 }
 
-#swipebox-bottom-bar,
+#swipebox-middle-bar,
 #swipebox-top-bar {
   -webkit-transition: 0.5s;
           transition: 0.5s;
@@ -104,10 +104,10 @@ html.swipebox-html.swipebox-touch {
   width: 100%;
 }
 
-#swipebox-bottom-bar {
+#swipebox-middle-bar {
   bottom: vh/2;
 }
-#swipebox-bottom-bar.visible-bars {
+#swipebox-middle-bar.visible-bars {
   -webkit-transform: translate3d(0, -50px, 0);
           transform: translate3d(0, -50px, 0);
 }
@@ -282,14 +282,22 @@ html.swipebox-html.swipebox-touch {
   background: #0d0d0d;
 }
 
-#swipebox-bottom-bar,
-#swipebox-top-bar {
+#swipebox-middle-bar,
+#swipebox-top-bar,
+#swipebox-bottom-bar  {
   text-shadow: 1px 1px 1px black;
   background: #000;
   opacity: 0.95;
 }
 
 #swipebox-top-bar {
+  color: white !important;
+  font-size: 15px;
+  line-height: 43px;
+  font-family: Helvetica, Arial, sans-serif;
+}
+
+#swipebox-bottom-bar {
   color: white !important;
   font-size: 15px;
   line-height: 43px;
