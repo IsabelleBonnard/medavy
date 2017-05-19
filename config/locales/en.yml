@@ -81,9 +81,26 @@ en:
 
   gallery:
     welcome: "Welcome to our photo gallery!"
-    back: "Back to gallery"
     diaporama: "Click to launch slideshow"
     medavy: "Medavy Castle"
+    content_101: "Château de Médavy is a beautiful eighteenth century castle with classical architecture, located in the southern part of the Pays d'Auge, Normandie"
+    content_110: "Located midway along the road connecting Argentan to Sées, Médavy has been since the XII century one of the duchy of Normandie’s major strongholds"
+    content_111: "The Orne river was diverted in XVIIIe centery in order to supply the moats with water"
+    content_104: "Four towers are built on the four corners formed by the moats; only two remain today: the tower Saint Jean and the tower Saint Pierre"
+    content_105: "Saint Jean tower has been transformed into a chapel"
+    content_106: "Chapel of Saint Jean tower"
+    content_102: "The Saint Pierre tower hosts a collection of XXIrst century contemporary art pieces."
+    content_108: "African works of art are exposed in the dovecote"
+    content_107: "Outdoors (non-guided), two superb pathways, lined by lime trees, offer a pleasant walk along the Orne river."
+    content_109: "The 1789 Revolution did not spare Medavy : the furniture is dispersed in 1794, and the château stays uninhabited for ten years."
+    content_103: "The Château de Médavy and its park welcome you every day during summer holiday - please refer to home page of the website for more details"
+    content_112: "two well-endowed chart rooms shelter Spanish cabinets as well as a collection of globes and atlases from the XVI to the XVIII century"
+    content_117: "Major renovation work have been undertaken since 2004"
+    content_118: "Structural work in Saint Jean tower"
+    content_113: "Night light"
+    content_114: "Medavy by night"
+    content_115: "We hope you enjoyed the visit"
+    content_116: "See you soon!"
 
   questions:
     intro: "Welcome to Medavy quizz!"
